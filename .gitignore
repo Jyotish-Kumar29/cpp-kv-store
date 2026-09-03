@@ -1,32 +1,5 @@
-# Build artifacts and CMake
+# Build artifacts (all cmake -B targets land under build/)
 /build/
-CMakeCache.txt
-CMakeFiles/
-Makefile
-cmake_install.cmake
-compile_commands.json
-kvstore
-
-# Data and Persistence (keep the directory but ignore contents)
-data/*
-!data/.gitkeep
-*.aof
-
-# Test Outputs & Metrics
-tests/results/*.csv
-endurance_metrics.csv
-
-# Python caches and environments
-__pycache__/
-*.py[cod]
-*$py.class
-venv/
-.venv/
-env/
-
-# OS / Editor specific
-.DS_Store
-.idea/
-.vscode/
-*.swp
-*~
+ 
+# Persistence (keep the directory, ignore the AOF file)
+data/*.aof

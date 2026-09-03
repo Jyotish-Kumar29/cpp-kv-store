@@ -1,0 +1,207 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      run_full_scalability:
+        description: "Also run the full-scale client connection scalability test"
+        type: boolean
+        default: false
+
+jobs:
+  unit-tests:
+    name: Unit & integration tests (release)
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ make cmake git python3
+
+      - name: Build server
+        run: ./scripts/build/build_server.sh
+
+      - name: Build tests & benchmarks
+        run: ./scripts/build/build_tests_n_benchmarks.sh
+
+      - name: Run CTest suite (unit tests)
+        working-directory: build/tests_n_benchmarks
+        run: ctest --output-on-failure
+
+      - name: In-process integration tests (no live server needed)
+        working-directory: build/tests_n_benchmarks/tests
+        run: |
+          ./test_full_flow
+          ./test_server_client
+          ./disconnect_test
+
+      - name: Start server
+        run: ./scripts/run/manage_server.sh start 8080 false
+
+      - name: Data integrity test (write/read/verify)
+        run: python3 tests/unit/test_data_integrity.py
+
+      - name: Stop server
+        if: always()
+        run: ./scripts/run/manage_server.sh stop 8080
+
+  asan:
+    name: AddressSanitizer + UBSan
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ libasan libubsan make cmake git
+
+      - name: Build & run offline tests under ASan + UBSan
+        run: ./scripts/run/run_asan.sh
+
+  tsan:
+    name: ThreadSanitizer
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ libtsan make cmake git
+
+      - name: Build & run offline tests under ThreadSanitizer
+        run: ./scripts/run/run_tsan.sh
+
+  stress-and-chaos:
+    name: Stress, chaos & malformed-protocol tests
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+      # A few dozen rapid connect/disconnect cycles and raw-socket chaos
+      # traffic run here; a modest fd headroom keeps that comfortable.
+      options: >-
+        --ulimit nofile=65536:65536
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ make cmake git python3
+
+      - name: Build server
+        run: ./scripts/build/build_server.sh
+
+      - name: Build tests & benchmarks
+        run: ./scripts/build/build_tests_n_benchmarks.sh
+
+      - name: In-process concurrency stress (KVStore + UserBook)
+        run: ./build/tests_n_benchmarks/tests/concurrency_stress 6 4 5
+
+      - name: UserBook registration stress
+        run: ./build/tests_n_benchmarks/tests/user_stress 8 10000 4
+
+      - name: Start server
+        run: ./scripts/run/manage_server.sh start 8080 false
+
+      - name: TCP chaos test
+        run: python3 tests/chaos/TCP_chaos_test.py 127.0.0.1 8080
+
+      - name: Malformed protocol test
+        run: python3 tests/chaos/malformed_protocol.py 127.0.0.1 8080
+
+      - name: Stop server
+        if: always()
+        run: ./scripts/run/manage_server.sh stop 8080
+
+  scalability-smoke:
+    name: TCP connection scalability (CI-scaled, every push)
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+      options: >-
+        --cap-add=NET_ADMIN
+        --ulimit nofile=200000:200000
+        --sysctl net.ipv4.ip_local_port_range="1024 65535"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ make cmake git procps-ng iproute
+
+      - name: Build server
+        run: ./scripts/build/build_server.sh
+
+      - name: Build tests & benchmarks
+        run: ./scripts/build/build_tests_n_benchmarks.sh
+
+      - name: Verify runtime limits
+        run: |
+          echo "File descriptor limit:"
+          ulimit -n
+
+          echo "Ephemeral port range:"
+          sysctl net.ipv4.ip_local_port_range
+
+      - name: Start server
+        run: ./scripts/run/manage_server.sh start 8080 false
+
+      - name: Scalability test (10,000 clients / 45s)
+        run: ./build/tests_n_benchmarks/tests/test_scalability 127.0.0.1 8080 10000 10 45
+
+      - name: Stop server
+        if: always()
+        run: ./scripts/run/manage_server.sh stop 8080
+
+  scalability-full:
+    name: TCP connection scalability (full scale — manual trigger only)
+    if: github.event_name == 'workflow_dispatch' && inputs.run_full_scalability
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+      options: >-
+        --cap-add=NET_ADMIN
+        --ulimit nofile=200000:200000
+        --sysctl net.ipv4.ip_local_port_range="1024 65535"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: dnf install -y gcc gcc-c++ make cmake git procps-ng iproute
+
+      - name: Build server
+        run: ./scripts/build/build_server.sh
+
+      - name: Build tests & benchmarks
+        run: ./scripts/build/build_tests_n_benchmarks.sh
+
+      - name: Verify runtime limits
+        run: |
+          echo "File descriptor limit:"
+          ulimit -n
+
+          echo "Ephemeral port range:"
+          sysctl net.ipv4.ip_local_port_range
+
+      - name: Start server
+        run: ./scripts/run/manage_server.sh start 8080 false
+
+      # Adjust the client count below to whatever your README documents
+      # as the full-scale figure for this project.
+      - name: Scalability test (60,000 clients / 120s)
+        run: ./build/tests_n_benchmarks/tests/test_scalability 127.0.0.1 8080 60000 10 120
+
+      - name: Stop server
+        if: always()
+        run: ./scripts/run/manage_server.sh stop 8080
