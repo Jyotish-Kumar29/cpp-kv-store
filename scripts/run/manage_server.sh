@@ -41,6 +41,22 @@ is_our_server() {
     grep -qa "kvstore" "/proc/$pid/cmdline" 2>/dev/null
 }
 
+# True if pid is a zombie (state Z) -- i.e. it has already terminated and
+# is just waiting for a parent to reap it via wait(). This happens in
+# containers with no real init/subreaper process: the server has no
+# SIGTERM handler, so it dies immediately on `kill`, but nothing ever
+# calls wait() on it, so it lingers as a zombie. `kill -0` still succeeds
+# against a zombie's PID, which would otherwise make wait_for_pid_exit
+# wrongly treat an already-dead process as still running.
+is_zombie() {
+    local pid="$1"
+    local state
+
+    [[ -r "/proc/$pid/stat" ]] || return 1
+    state="$(awk '{print $3}' "/proc/$pid/stat" 2>/dev/null)"
+    [[ "$state" == "Z" ]]
+}
+
 port_in_use() {
     if command -v ss >/dev/null 2>&1; then
         ss -ltn "( sport = :$PORT )" 2>/dev/null | grep -q ":$PORT"
@@ -61,6 +77,13 @@ wait_for_pid_exit() {
     local pid="$1"
 
     for ((i = 0; i < STOP_WAIT_TICKS; ++i)); do
+        # A zombie is already dead as far as we're concerned -- its exit
+        # status has been reported to the kernel, it's just sitting in the
+        # process table waiting for a parent that will never call wait()
+        # on it. Treat that the same as "gone" instead of waiting out the
+        # full timeout and then sending a useless SIGKILL.
+        is_zombie "$pid" && return 0
+
         kill -0 "$pid" 2>/dev/null || return 0
         sleep 0.1
     done
