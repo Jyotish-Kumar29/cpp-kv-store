@@ -6,11 +6,6 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      run_full_scalability:
-        description: "Also run the full-scale client connection scalability test"
-        type: boolean
-        default: false
 
 jobs:
   unit-tests:
@@ -164,8 +159,7 @@ jobs:
         run: bash ./scripts/run/manage_server.sh stop 8080
 
   scalability-full:
-    name: TCP connection scalability (full scale — manual trigger only)
-    if: github.event_name == 'workflow_dispatch' && inputs.run_full_scalability
+    name: TCP connection scalability (full scale)
     runs-on: ubuntu-latest
     container:
       image: fedora:latest
