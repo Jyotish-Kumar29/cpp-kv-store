@@ -129,9 +129,9 @@ contention):**
 
 | Operation | 1 thread | 8 threads | 32 threads | 100 threads |
 |---|---|---|---|---|
-| `Get` | 31.5 ns | 671 ns | 1.67 µs | 3.16 µs |
-| `Set` | 592 ns | 6.93 µs | 36.0 µs | 114.7 µs |
-| `Delete` | 242 ns | 4.85 µs | 20.3 µs | 87.3 µs |
+| `Get` | 30.6 ns | 617 ns | 1.76 µs | 4.24 µs |
+| `Set` | 583 ns | 6.61 µs | 33.5 µs | 106.2 µs |
+| `Delete` | 252 ns | 4.90 µs | 19.6 µs | 64.7 µs |
 
 `Set`/`Delete` degrade sharply under thread count because every write takes
 the single `shared_mutex` exclusively — see
@@ -143,31 +143,31 @@ empty):**
 
 | Cumulative SET range | Median | p99 | p99.9 |
 |---|---|---|---|
-| 0–100 | 37.6 µs | 60.8 µs | 78.5 µs |
-| 10,001–100,000 | 47.0 µs | 60.3 µs | 75.2 µs |
-| 100,001–1,000,000 | 49.8 µs | 63.6 µs | 77.3 µs |
+| 0–100 | 127.5 µs | 165.7 µs | 177.7 µs |
+| 10,001–100,000 | 40.7 µs | 56.0 µs | 67.5 µs |
+| 100,001–1,000,000 | 45.2 µs | 62.8 µs | 76.5 µs |
 
 **Whole-server latency, warm/steady state (non-persistent, same workload,
 each connection pre-seeded to a target key count before measuring):**
 
 | Starting live keys/connection | Median | p99 | p99.9 |
 |---|---|---|---|
-| 100 | 37.5 µs | 171.2 µs | 736.1 µs |
-| 10,000 | 28.7 µs | 64.3 µs | 212.6 µs |
-| 1,000,000 | 24.7 µs | 50.2 µs | 59.8 µs |
+| 100 | 38.3 µs | 159.2 µs | 176.9 µs |
+| 10,000 | 36.3 µs | 71.6 µs | 88.7 µs |
+| 1,000,000 | 31.1 µs | 73.1 µs | 137.1 µs |
 
-Persistent mode (AOF writes enabled) adds roughly 10–20 µs of median latency
+Persistent mode (AOF writes enabled) adds roughly 10–35 µs of median latency
 across both tables — see `run_benchmarks.sh` output for the full breakdown.
 
 **Throughput and load:**
 
 | Test | Result |
 |---|---|
-| Sustained throughput (100 threads, persistent connections, 1M requests, AOF disabled) | ~212,000 req/sec, 0 failures |
-| Sustained throughput (same workload, AOF enabled) | ~203,000 req/sec, 0 failures |
+| Sustained throughput (100 threads, persistent connections, 1M requests, AOF disabled) | ~218,000 req/sec, 0 failures |
+| Sustained throughput (same workload, AOF enabled) | ~190,000 req/sec, 0 failures |
 | 20,000 concurrent client stress test (60s) | ~195,000 req/sec sustained, 0 failed clients |
-| 10-minute endurance soak, non-persistent (100 threads) | 99.6M requests, 0 failures, ~166,000 avg req/sec |
-| 10-minute endurance soak, persistent (100 threads) | 97.8M requests, 0 failures, ~163,000 avg req/sec |
+| 10-minute endurance soak, non-persistent (100 threads) | 108.6M requests, 0 failures, ~181,000 avg req/sec |
+| 10-minute endurance soak, persistent (100 threads) | 105.5M requests, 0 failures, ~176,000 avg req/sec |
 
 Full test and benchmark output: [`run_all_tests.log`](./docs/tests_logs/run_all_tests.log)
 

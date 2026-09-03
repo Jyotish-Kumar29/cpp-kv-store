@@ -10,6 +10,7 @@ ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 BINARY="$ROOT/build/kvstore"
 PIDFILE="/tmp/kvstore_server.pid"
+LOGFILE="/tmp/kvstore_server.log"
 PORT="${2:-8080}"
 PERSISTENT="${3:-true}"
 
@@ -28,6 +29,16 @@ check_binary() {
         printf 'Run ./scripts/build/build_server.sh first.\n' >&2
         exit 1
     fi
+}
+
+# Confirms the PID in our PID file is actually our kvstore process, not an
+# unrelated process that happened to reuse the same PID after our server
+# died (which "kill -0 <pid>" alone can't distinguish).
+is_our_server() {
+    local pid="$1"
+
+    [[ -r "/proc/$pid/cmdline" ]] || return 1
+    grep -qa "kvstore" "/proc/$pid/cmdline" 2>/dev/null
 }
 
 port_in_use() {
@@ -71,7 +82,7 @@ start)
     check_binary
 
     if [[ -f "$PIDFILE" ]] &&
-       kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
+       is_our_server "$(cat "$PIDFILE")"; then
         printf 'Server already running (PID %s)\n' "$(cat "$PIDFILE")"
         exit 1
     fi
@@ -86,7 +97,13 @@ start)
 
     printf 'Starting server on port %s (persistent=%s)...\n' "$PORT" "$PERSISTENT"
 
-    "$BINARY" "$PORT" "$PERSISTENT" &
+    # setsid: gives the server its own session/process group, detached from
+    # this script's shell, so it survives even if the shell that launched it
+    # exits (e.g. between separate `docker exec` / CI-step invocations).
+    # < /dev/null > "$LOGFILE" 2>&1: fully detaches stdio from this shell and
+    # captures anything the server prints, instead of losing it to a closed
+    # pipe once this session ends.
+    setsid "$BINARY" "$PORT" "$PERSISTENT" < /dev/null > "$LOGFILE" 2>&1 &
 
     NEW_PID=$!
     printf '%s\n' "$NEW_PID" > "$PIDFILE"
@@ -96,6 +113,8 @@ start)
         if ! kill -0 "$NEW_PID" 2>/dev/null; then
             printf '%sERROR: Server exited immediately after start (check binary output).%s\n' \
                 "$RED" "$NC" >&2
+            printf 'Server log (%s):\n' "$LOGFILE" >&2
+            cat "$LOGFILE" >&2 2>/dev/null || true
             rm -f "$PIDFILE"
             exit 1
         fi
@@ -110,6 +129,8 @@ start)
 
     printf '%sERROR: Server process is running but never bound to port %s.%s\n' \
         "$RED" "$PORT" "$NC" >&2
+    printf 'Server log (%s):\n' "$LOGFILE" >&2
+    cat "$LOGFILE" >&2 2>/dev/null || true
     exit 1
     ;;
 
@@ -121,7 +142,7 @@ stop)
 
     PID="$(cat "$PIDFILE")"
 
-    if kill -0 "$PID" 2>/dev/null; then
+    if is_our_server "$PID"; then
         printf 'Stopping server (PID %s)...\n' "$PID"
 
         kill "$PID"
@@ -146,14 +167,14 @@ stop)
         rm -f "$PIDFILE"
         printf 'Stopped\n'
     else
-        printf 'Process not running\n'
+        printf 'Process not running (stale PID file — PID %s is not our server)\n' "$PID"
         rm -f "$PIDFILE"
     fi
     ;;
 
 status)
     if [[ -f "$PIDFILE" ]] &&
-       kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
+       is_our_server "$(cat "$PIDFILE")"; then
         printf 'Running (PID %s)\n' "$(cat "$PIDFILE")"
     else
         printf 'Not running\n'

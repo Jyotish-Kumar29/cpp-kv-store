@@ -1,240 +1,102 @@
 ============================================================
                  KV-STORE COMPLETE PIPELINE                 
 ============================================================
-Started: Thu Sep  3 05:06:26 AM IST 2026
+Started: Thu Sep  3 04:28:33 PM IST 2026
 
 ============================================================
                  BUILDING ALL CONFIGURATIONS               
 ============================================================
 
 [1/4] Building server...
--- The C compiler identification is GNU 16.2.1
--- The CXX compiler identification is GNU 16.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.4s)
--- Generating done (0.0s)
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/jk/Code/Projects/cpp-kv-store/build/server
-[ 50%] Building CXX object CMakeFiles/kvstore.dir/src/KVStore.cpp.o
-[ 50%] Building CXX object CMakeFiles/kvstore.dir/src/TCPServer.cpp.o
-[ 50%] Building CXX object CMakeFiles/kvstore.dir/main.cpp.o
-[ 66%] Building CXX object CMakeFiles/kvstore.dir/src/Utils.cpp.o
-[ 83%] Building CXX object CMakeFiles/kvstore.dir/src/UserBook.cpp.o
-[100%] Linking CXX executable kvstore
 [100%] Built target kvstore
 [1/4] Server build complete: build/server/
 
 [2/4] Building tests and benchmarks...
--- The C compiler identification is GNU 16.2.1
--- The CXX compiler identification is GNU 16.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.3s)
--- Generating done (0.0s)
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/jk/Code/Projects/cpp-kv-store/build/tests_n_benchmarks
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/unit/test_kv_store.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/KVStore.cpp.o
-[100%] Linking CXX executable test_kv_store
 [100%] Built target test_kv_store
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/unit/test_utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_utils
 [100%] Built target test_utils
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/unit/test_user_book.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable test_user_book
 [100%] Built target test_user_book
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/unit/test_persistence.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_persistence
 [100%] Built target test_persistence
-[ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/KVStore.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/integration/test_full_flow.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/UserBook.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/TCPServer.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_full_flow
 [100%] Built target test_full_flow
-[ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/integration/test_server_client.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/UserBook.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/TCPServer.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/KVStore.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_server_client
 [100%] Built target test_server_client
-[ 50%] Building CXX object tests/CMakeFiles/test_scalability.dir/stress/scalability_test.cpp.o
-[100%] Linking CXX executable test_scalability
 [100%] Built target test_scalability
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/stress/concurrency_stress.cpp.o
-[100%] Linking CXX executable concurrency_stress
 [100%] Built target concurrency_stress
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/stress/user_stress.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable user_stress
 [100%] Built target user_stress
-[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/UserBook.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/TCPServer.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/chaos/disconnect_test.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/KVStore.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable disconnect_test
 [100%] Built target disconnect_test
-[ 75%] Building CXX object benchmarks/CMakeFiles/bench_internal.dir/__/src/KVStore.cpp.o
-[ 75%] Building CXX object benchmarks/CMakeFiles/bench_internal.dir/__/src/Utils.cpp.o
-[ 75%] Building CXX object benchmarks/CMakeFiles/bench_internal.dir/bench_internal_engine.cpp.o
-[100%] Linking CXX executable bench_internal
 [100%] Built target bench_internal
-[ 50%] Building CXX object benchmarks/CMakeFiles/cold_server_latency.dir/cold_server_latency.cpp.o
-[100%] Linking CXX executable cold_server_latency
 [100%] Built target cold_server_latency
-[ 50%] Building CXX object benchmarks/CMakeFiles/steady_server_latency.dir/steady_server_latency.cpp.o
-[100%] Linking CXX executable steady_server_latency
 [100%] Built target steady_server_latency
-[ 50%] Building CXX object benchmarks/CMakeFiles/bench_throughput.dir/bench_net_throughput.cpp.o
-[100%] Linking CXX executable bench_throughput
 [100%] Built target bench_throughput
-[ 50%] Building CXX object benchmarks/CMakeFiles/bench_endurance.dir/bench_net_endurance.cpp.o
-[100%] Linking CXX executable bench_endurance
 [100%] Built target bench_endurance
 [2/4] Tests and benchmarks build complete: build/tests_n_benchmarks/
 
 [3/4] Building ASan + UBSan configuration...
--- The C compiler identification is GNU 16.2.1
--- The CXX compiler identification is GNU 16.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.3s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/jk/Code/Projects/cpp-kv-store/build/asan+ubsan
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/unit/test_kv_store.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable test_kv_store
+[ 40%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/KVStore.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/UserBook.cpp.o
+[ 60%] Linking CXX executable test_kv_store
 [100%] Built target test_kv_store
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/unit/test_utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_utils
+[ 40%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/UserBook.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/test_utils.dir/__/src/KVStore.cpp.o
+[ 60%] Linking CXX executable test_utils
 [100%] Built target test_utils
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/unit/test_user_book.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_user_book
+[ 40%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/UserBook.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/KVStore.cpp.o
+[ 60%] Linking CXX executable test_user_book
 [100%] Built target test_user_book
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/unit/test_persistence.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable test_persistence
+[ 40%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/KVStore.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/test_persistence.dir/__/src/UserBook.cpp.o
+[ 60%] Linking CXX executable test_persistence
 [100%] Built target test_persistence
+[ 33%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/KVStore.cpp.o
+[ 33%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/TCPServer.cpp.o
 [ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/UserBook.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/KVStore.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/TCPServer.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/test_full_flow.dir/integration/test_full_flow.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/test_full_flow.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_full_flow
+[ 66%] Linking CXX executable test_full_flow
 [100%] Built target test_full_flow
+[ 16%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/KVStore.cpp.o
+[ 33%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/TCPServer.cpp.o
 [ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/UserBook.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/KVStore.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/TCPServer.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/test_server_client.dir/integration/test_server_client.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/test_server_client.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable test_server_client
+[ 66%] Linking CXX executable test_server_client
 [100%] Built target test_server_client
 [ 40%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/UserBook.cpp.o
-[ 40%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/stress/concurrency_stress.cpp.o
-[ 60%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/Utils.cpp.o
-[100%] Linking CXX executable concurrency_stress
+[ 40%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/KVStore.cpp.o
+[ 60%] Linking CXX executable concurrency_stress
 [100%] Built target concurrency_stress
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/stress/user_stress.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable user_stress
+[ 33%] Building CXX object tests/CMakeFiles/user_stress.dir/__/src/UserBook.cpp.o
+[ 66%] Linking CXX executable user_stress
 [100%] Built target user_stress
-[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/TCPServer.cpp.o
-[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/chaos/disconnect_test.cpp.o
+[ 16%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/TCPServer.cpp.o
+[ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/KVStore.cpp.o
 [ 50%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/UserBook.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/Utils.cpp.o
-[ 83%] Building CXX object tests/CMakeFiles/disconnect_test.dir/__/src/KVStore.cpp.o
-[100%] Linking CXX executable disconnect_test
+[ 66%] Linking CXX executable disconnect_test
 [100%] Built target disconnect_test
 [3/4] ASan + UBSan build complete: build/asan+ubsan/
 
 [4/4] Building TSan configuration...
--- The C compiler identification is GNU 16.2.1
--- The CXX compiler identification is GNU 16.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.3s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/jk/Code/Projects/cpp-kv-store/build/tsan
 [ 40%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/KVStore.cpp.o
-[ 40%] Building CXX object tests/CMakeFiles/test_kv_store.dir/unit/test_kv_store.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/UserBook.cpp.o
-[100%] Linking CXX executable test_kv_store
+[ 40%] Building CXX object tests/CMakeFiles/test_kv_store.dir/__/src/UserBook.cpp.o
+[ 60%] Linking CXX executable test_kv_store
 [100%] Built target test_kv_store
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/test_user_book.dir/unit/test_user_book.cpp.o
-[100%] Linking CXX executable test_user_book
+[ 40%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/KVStore.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/test_user_book.dir/__/src/UserBook.cpp.o
+[ 60%] Linking CXX executable test_user_book
 [100%] Built target test_user_book
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/Utils.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/UserBook.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/KVStore.cpp.o
-[ 80%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/stress/concurrency_stress.cpp.o
-[100%] Linking CXX executable concurrency_stress
+[ 20%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/KVStore.cpp.o
+[ 40%] Building CXX object tests/CMakeFiles/concurrency_stress.dir/__/src/UserBook.cpp.o
+[ 60%] Linking CXX executable concurrency_stress
 [100%] Built target concurrency_stress
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/__/src/UserBook.cpp.o
-[ 66%] Building CXX object tests/CMakeFiles/user_stress.dir/stress/user_stress.cpp.o
-[100%] Linking CXX executable user_stress
+[ 33%] Building CXX object tests/CMakeFiles/user_stress.dir/__/src/UserBook.cpp.o
+[ 66%] Linking CXX executable user_stress
 [100%] Built target user_stress
 [4/4] TSan build complete: build/tsan/
 
@@ -270,11 +132,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] KVStoreTest.DeleteMissingKey
 [       OK ] KVStoreTest.DeleteMissingKey (0 ms)
 [ RUN      ] KVStoreTest.ConcurrentWritesAndReads
-[       OK ] KVStoreTest.ConcurrentWritesAndReads (34 ms)
-[----------] 4 tests from KVStoreTest (34 ms total)
+[       OK ] KVStoreTest.ConcurrentWritesAndReads (50 ms)
+[----------] 4 tests from KVStoreTest (50 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (34 ms total)
+[==========] 4 tests from 1 test suite ran. (50 ms total)
 [  PASSED  ] 4 tests.
 
 [UNIT] test_utils...
@@ -322,11 +184,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser
 [       OK ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser (0 ms)
 [ RUN      ] UserBookTest.ConcurrentRegistrationsAllUnique
-[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (6 ms)
-[----------] 8 tests from UserBookTest (6 ms total)
+[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (9 ms)
+[----------] 8 tests from UserBookTest (9 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 1 test suite ran. (6 ms total)
+[==========] 8 tests from 1 test suite ran. (9 ms total)
 [  PASSED  ] 8 tests.
 
 [UNIT] test_persistence...
@@ -360,9 +222,9 @@ AOF file not found. Starting fresh.
 [==========] 6 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 6 tests.
 
-[INTEGRATION] test_data_integrity.py...
+[UNIT] test_data_integrity.py...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438284)
+Started (PID 715929)
 
 
 ============================================================
@@ -372,7 +234,7 @@ Target:       127.0.0.1:8080
 Keys:         10000
 ------------------------------------------------------------
 [Phase 1] Writing 10000 keys...
-Write Phase Complete (0.12s).
+Write Phase Complete (0.27s).
 Reading back 10000 keys to verify...
 Testing invalid commands and parser errors...
 
@@ -383,12 +245,12 @@ Testing invalid commands and parser errors...
 ============================================================
 
 
-Stopping server (PID 438284)...
+Stopping server (PID 715929)...
 Stopped
 
 [INTEGRATION] test_full_flow...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438306)
+Started (PID 715955)
 Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/googletest/src/gtest_main.cc
 [==========] Running 3 tests from 1 test suite.
 [----------] Global test environment set-up.
@@ -404,45 +266,45 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [----------] Global test environment tear-down
 [==========] 3 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 3 tests.
-Stopping server (PID 438306)...
+Stopping server (PID 715955)...
 Stopped
 
 [INTEGRATION] test_server_client...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438325)
+Started (PID 715975)
 Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/googletest/src/gtest_main.cc
 [==========] Running 6 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 6 tests from ServerClientTest
 [ RUN      ] ServerClientTest.CompleteKeyValueLifecycle
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.CompleteKeyValueLifecycle (301 ms)
+[       OK ] ServerClientTest.CompleteKeyValueLifecycle (300 ms)
 [ RUN      ] ServerClientTest.InvalidCommands
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.InvalidCommands (301 ms)
+[       OK ] ServerClientTest.InvalidCommands (300 ms)
 [ RUN      ] ServerClientTest.MultipleRequests
 Epoll server is listening on the port 18080
 [       OK ] ServerClientTest.MultipleRequests (341 ms)
 [ RUN      ] ServerClientTest.UserIsolation
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.UserIsolation (301 ms)
+[       OK ] ServerClientTest.UserIsolation (300 ms)
 [ RUN      ] ServerClientTest.LoginWithRegisteredUser
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.LoginWithRegisteredUser (301 ms)
+[       OK ] ServerClientTest.LoginWithRegisteredUser (300 ms)
 [ RUN      ] ServerClientTest.InvalidLoginRejected
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.InvalidLoginRejected (301 ms)
-[----------] 6 tests from ServerClientTest (1849 ms total)
+[       OK ] ServerClientTest.InvalidLoginRejected (300 ms)
+[----------] 6 tests from ServerClientTest (1845 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (1849 ms total)
+[==========] 6 tests from 1 test suite ran. (1845 ms total)
 [  PASSED  ] 6 tests.
-Stopping server (PID 438325)...
+Stopping server (PID 715975)...
 Stopped
 
 [CHAOS] TCP_chaos_test.py...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438351)
+Started (PID 716022)
 Connecting to 127.0.0.1:8080
 
 [1] Drip feed - one byte per send(), 5ms apart
@@ -492,12 +354,12 @@ Connecting to 127.0.0.1:8080
 ==================================================
 24 passed, 0 failed
 ==================================================
-Stopping server (PID 438351)...
+Stopping server (PID 716022)...
 Stopped
 
 [CHAOS] malformed_protocol.py...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438370)
+Started (PID 716061)
 Running malformed protocol tests against 127.0.0.1:8080
 
 [1] Random bytes test
@@ -522,43 +384,43 @@ Running malformed protocol tests against 127.0.0.1:8080
 ==================================================
 7 passed, 0 failed
 ==================================================
-Stopping server (PID 438370)...
+Stopping server (PID 716061)...
 Stopped
 
 [CHAOS] disconnect_test...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438389)
+Started (PID 716086)
 Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/googletest/src/gtest_main.cc
 [==========] Running 4 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 4 tests from DisconnectTest
 [ RUN      ] DisconnectTest.ImmediateDisconnect
-Loading old server data from AOF file...
+AOF file not found. Starting fresh.
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.ImmediateDisconnect (10404 ms)
+[       OK ] DisconnectTest.ImmediateDisconnect (601 ms)
 [ RUN      ] DisconnectTest.DisconnectAfterPartialRequest
 Loading old server data from AOF file...
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.DisconnectAfterPartialRequest (10301 ms)
+[       OK ] DisconnectTest.DisconnectAfterPartialRequest (600 ms)
 [ RUN      ] DisconnectTest.DisconnectMidStream
 Loading old server data from AOF file...
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.DisconnectMidStream (10044 ms)
+[       OK ] DisconnectTest.DisconnectMidStream (501 ms)
 [ RUN      ] DisconnectTest.ManyRapidConnectionsAndDisconnections
 Loading old server data from AOF file...
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.ManyRapidConnectionsAndDisconnections (10330 ms)
-[----------] 4 tests from DisconnectTest (41081 ms total)
+[       OK ] DisconnectTest.ManyRapidConnectionsAndDisconnections (807 ms)
+[----------] 4 tests from DisconnectTest (2510 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (41081 ms total)
+[==========] 4 tests from 1 test suite ran. (2510 ms total)
 [  PASSED  ] 4 tests.
-Stopping server (PID 438389)...
+Stopping server (PID 716086)...
 Stopped
 
 [STRESS] scalability_test...
 Starting server on port 8080 (persistent=false)...
-Started (PID 438424)
+Started (PID 716151)
 === KV‑Store TCP Client Scalability Test ===
 Target: 127.0.0.1:8080
 Clients: 20000
@@ -585,17 +447,17 @@ Duration: 60s
   initiated 18000 / 20000 connections
   initiated 19000 / 20000 connections
   initiated 20000 / 20000 connections
-[5s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=760000 responses_received=710459
-[10s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=1800000 responses_received=1730860
-[15s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=2800000 responses_received=2717848
-[20s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=3780000 responses_received=3691730
-[25s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=4860000 responses_received=4736364
-[30s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=5760000 responses_received=5596910
-[35s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=6740000 responses_received=6596025
-[40s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=7740000 responses_received=7605805
-[45s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=8740000 responses_received=8557408
-[50s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=9760000 responses_received=9519907
-[55s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=10760000 responses_received=10614160
+[5s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=854460 responses_received=266342
+[11s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=1674460 responses_received=904008
+[15s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=2494460 responses_received=1710789
+[20s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=3674460 responses_received=3277234
+[25s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=4714460 responses_received=4474102
+[30s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=5774460 responses_received=5679282
+[35s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=6794460 responses_received=6677312
+[40s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=7794460 responses_received=7645320
+[45s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=8774460 responses_received=8693954
+[50s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=9754460 responses_received=9653438
+[55s] connected=20000 ready=20000 authenticating=0 connecting=0 failed=0 requests_sent=10774460 responses_received=10629009
 
 === Results ===
 Target clients: 20000
@@ -604,13 +466,13 @@ Clients ready: 20000
 Clients authenticating: 0
 Clients connecting: 0
 Failed clients: 0
-Requests sent: 11760000
-Responses received: 11582451
-Elapsed: 60.3408 s
-Aggregate request rate: 194893 req/s
-Aggregate response rate: 191951 resp/s
+Requests sent: 11774460
+Responses received: 11620318
+Elapsed: 60.2894 s
+Aggregate request rate: 195299 req/s
+Aggregate response rate: 192742 resp/s
 RESULT: PASS
-Stopping server (PID 438424)...
+Stopping server (PID 716151)...
 Stopped
 
 [STRESS] concurrency_stress...
@@ -624,7 +486,7 @@ Starting concurrency stress test:
 
 === concurrency_stress summary ===
 kv workers=8 kv readers=4 user workers=4 users/worker=250 duration=5s
-operations=53444156
+operations=70667431
 invariant failures=0
 RESULT: PASS
 
@@ -635,7 +497,7 @@ Registrations per thread: 10000
 Query threads: 4
 
 === UserBook Stress Test Results ===
-Total time: 145 ms
+Total time: 190 ms
 Registration failures: 0
 Authentication failures: 0
 Operation failures: 0
@@ -652,7 +514,7 @@ Modes: non-persistent + persistent
 ============================================================
 
 [INTERNAL] bench_internal...
-2026-09-03T05:08:51+05:30
+2026-09-03T16:30:08+05:30
 Running build/tests_n_benchmarks/benchmarks/bench_internal
 Run on (8 X 4400 MHz CPU s)
 CPU Caches:
@@ -660,27 +522,27 @@ CPU Caches:
   L1 Instruction 32 KiB (x4)
   L2 Unified 1280 KiB (x4)
   L3 Unified 8192 KiB (x1)
-Load Average: 2.36, 1.34, 0.86
+Load Average: 3.15, 1.42, 0.75
 ***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
 ---------------------------------------------------------------------
 Benchmark                           Time             CPU   Iterations
 ---------------------------------------------------------------------
-BM_KVStore_Set/threads:1          592 ns          594 ns      1000000
-BM_KVStore_Set/threads:8         6930 ns         4036 ns       202576
-BM_KVStore_Set/threads:32       36003 ns         8330 ns        77120
-BM_KVStore_Set/threads:100     114722 ns         9002 ns        92900
-BM_KVStore_Get/threads:1         31.5 ns         31.4 ns     21071616
-BM_KVStore_Get/threads:8          671 ns          668 ns      1031064
-BM_KVStore_Get/threads:32        1672 ns          721 ns      1005600
-BM_KVStore_Get/threads:100       3156 ns          745 ns      1032700
-BM_KVStore_Del/threads:1          242 ns          243 ns      2897424
-BM_KVStore_Del/threads:8         4847 ns         2952 ns       258984
-BM_KVStore_Del/threads:32       20301 ns         4334 ns       165600
-BM_KVStore_Del/threads:100      87317 ns         5923 ns       100000
+BM_KVStore_Set/threads:1          583 ns          583 ns      1000000
+BM_KVStore_Set/threads:8         6610 ns         3663 ns       202456
+BM_KVStore_Set/threads:32       33452 ns         7070 ns        91840
+BM_KVStore_Set/threads:100     106195 ns         7232 ns       112900
+BM_KVStore_Get/threads:1         30.6 ns         30.5 ns     22695788
+BM_KVStore_Get/threads:8          617 ns          559 ns      1181856
+BM_KVStore_Get/threads:32        1759 ns          681 ns      1060352
+BM_KVStore_Get/threads:100       4235 ns          670 ns      1378100
+BM_KVStore_Del/threads:1          252 ns          253 ns      2768570
+BM_KVStore_Del/threads:8         4899 ns         2968 ns       251008
+BM_KVStore_Del/threads:32       19606 ns         4121 ns       165472
+BM_KVStore_Del/threads:100      64743 ns         4261 ns        93900
 
 [NETWORK] cold_server_latency (non-persistent)...
 Starting server on port 8080 (persistent=false)...
-Started (PID 440413)
+Started (PID 718902)
 
 ==================================================
 RUNNING COLD-STATE LATENCY BENCHMARK
@@ -715,19 +577,19 @@ Key ranges are cumulative accepted SET requests, not live key count (DELs are no
 Cold-state latency (mixed SET/GET/DEL workload over TCP)
 Cumulative SET range        Samples     Avg (us)  Median (us)     p90 (us)     p95 (us)     p99 (us)   p99.9 (us)  p99.99 (us)     Max (us)
 -------------------------------------------------------------------------------------------------------------------------------------------
-0-100                           288       38.566       37.567       40.182       41.991       60.807       78.495       78.495      114.507
-101-1,000                      2226       40.738       37.935       52.901       55.363       64.659       80.417       81.293       82.485
-1,001-10,000                  22788       40.187       39.437       44.175       46.060       57.092       83.760      194.939      275.858
-10,001-100,000               224456       47.892       47.026       53.635       55.338       60.339       75.226      386.347     3162.113
-100,001-1,000,000           2252168       50.020       49.797       55.661       57.732       63.568       77.263      114.664    41976.656
+0-100                           289      130.802      127.470      149.498      154.895      165.704      177.730      177.730      242.506
+101-1,000                      2227       76.974       64.624      134.198      147.501      161.995      183.514      195.542      197.154
+1,001-10,000                  22779       38.901       38.262       40.915       42.233       53.754      111.944      122.001      206.241
+10,001-100,000               224445       41.603       40.669       47.554       49.906       56.009       67.539      264.027     3334.204
+100,001-1,000,000           2252180       46.209       45.225       54.369       56.892       62.764       76.548      187.384    40953.933
 
-Wall clock: 16.1s, measured requests: 2,501,926 (155,145 req/s)
-Stopping server (PID 440413)...
+Wall clock: 14.8s, measured requests: 2,501,920 (168,686 req/s)
+Stopping server (PID 718902)...
 Stopped
 
 [NETWORK] cold_server_latency (persistent)...
 Starting server on port 8080 (persistent=true)...
-Started (PID 440444)
+Started (PID 719078)
 
 ==================================================
 RUNNING COLD-STATE LATENCY BENCHMARK
@@ -762,19 +624,19 @@ Key ranges are cumulative accepted SET requests, not live key count (DELs are no
 Cold-state latency (mixed SET/GET/DEL workload over TCP)
 Cumulative SET range        Samples     Avg (us)  Median (us)     p90 (us)     p95 (us)     p99 (us)   p99.9 (us)  p99.99 (us)     Max (us)
 -------------------------------------------------------------------------------------------------------------------------------------------
-0-100                           291      158.234      153.738      183.664      198.528      230.496      233.211      233.211      234.868
-101-1,000                      2225       69.635       59.470      126.619      142.924      172.353      202.839      204.585      212.092
-1,001-10,000                  22780       42.993       42.531       48.454       50.605       58.613       92.702      185.577      190.048
-10,001-100,000               224465       53.263       52.688       60.723       63.492       70.673       86.162      460.427     3282.274
-100,001-1,000,000           2252143       60.623       58.668       72.520       78.667       97.428      170.116      786.356    40302.352
+0-100                           287      176.991      174.718      209.123      219.687      266.543      271.945      271.945      282.099
+101-1,000                      2227       77.853       58.905      149.399      196.066      215.186      227.510      235.025      236.234
+1,001-10,000                  22781       55.296       53.976       66.911       71.614       82.989      102.860      264.761      335.360
+10,001-100,000               224461       73.990       72.265       88.625       95.371      109.595      131.495      687.421     3419.079
+100,001-1,000,000           2252167       77.828       75.681       94.685      101.907      114.224      131.808      272.729    39563.814
 
-Wall clock: 19.3s, measured requests: 2,501,904 (129,632 req/s)
-Stopping server (PID 440444)...
+Wall clock: 24.8s, measured requests: 2,501,923 (100,828 req/s)
+Stopping server (PID 719078)...
 Stopped
 
 [NETWORK] steady_server_latency (non-persistent)...
 Starting server on port 8080 (persistent=false)...
-Started (PID 440512)
+Started (PID 719393)
 
 ==================================================
 RUNNING WARM / STEADY-STATE LATENCY BENCHMARK
@@ -800,17 +662,17 @@ Measurement workload weights:
 Warm/steady-state latency (mixed SET/GET/DEL workload over TCP)
 Starting live keys          Samples     Avg (us)  Median (us)     p90 (us)     p95 (us)     p99 (us)   p99.9 (us)  p99.99 (us)     Max (us)
 -------------------------------------------------------------------------------------------------------------------------------------------
-100                            5000       45.469       37.499       57.018       66.753      171.247      736.134      978.737     1146.325
-1,000                          5000       57.899       51.519       69.705       93.321      363.977      740.982      941.906      999.447
-10,000                         5000       30.179       28.734       39.827       43.674       64.311      212.613      448.113      519.942
-100,000                        5000       23.894       22.861       34.424       38.141       44.029       73.953      993.019     1533.929
-1,000,000                      5000       23.861       24.703       38.005       40.177       50.153       59.784       84.507       86.463
-Stopping server (PID 440512)...
+100                            5000       53.714       38.314      106.651      142.622      159.163      176.852      187.140      196.151
+1,000                          5000       50.108       38.772       71.310      102.394      142.971     1002.465     1018.374     1022.569
+10,000                         5000       35.805       36.264       46.972       55.390       71.565       88.747       92.726       92.986
+100,000                        5000       46.840       41.594       79.061       91.686      112.426      132.559      162.159      181.715
+1,000,000                      5000       30.009       31.100       44.738       52.488       73.052      137.109      161.742      181.175
+Stopping server (PID 719393)...
 Stopped
 
 [NETWORK] steady_server_latency (persistent)...
 Starting server on port 8080 (persistent=true)...
-Started (PID 440624)
+Started (PID 720475)
 
 ==================================================
 RUNNING WARM / STEADY-STATE LATENCY BENCHMARK
@@ -836,17 +698,17 @@ Measurement workload weights:
 Warm/steady-state latency (mixed SET/GET/DEL workload over TCP)
 Starting live keys          Samples     Avg (us)  Median (us)     p90 (us)     p95 (us)     p99 (us)   p99.9 (us)  p99.99 (us)     Max (us)
 -------------------------------------------------------------------------------------------------------------------------------------------
-100                            5000       58.983       45.049      111.087      148.267      176.224      229.194      275.455      293.404
-1,000                          5000       50.212       47.780       71.639       78.502       96.041      215.401      896.696      897.332
-10,000                         5000       20.431       19.202       27.494       29.271       37.386       57.900      106.784      191.605
-100,000                        5000       14.871       14.437       18.811       20.460       26.656       40.551       88.727      106.790
-1,000,000                      5000       22.688       21.306       33.708       36.426       43.303      105.545      109.912      113.364
-Stopping server (PID 440624)...
+100                            5000       49.541       49.267       56.631       59.347       64.457       81.353      105.659      108.959
+1,000                          5000       49.330       49.403       63.269       70.846       88.678      136.572      783.245      794.489
+10,000                         5000       31.249       30.627       42.920       49.441       59.445       71.357       77.700       93.159
+100,000                        5000       35.106       34.283       48.580       52.748       61.638       72.722      127.256      136.740
+1,000,000                      5000       25.676       25.369       35.605       38.716       44.465       51.766       61.985       63.743
+Stopping server (PID 720475)...
 Stopped
 
 [NETWORK] bench_throughput (non-persistent)...
 Starting server on port 8080 (persistent=false)...
-Started (PID 440735)
+Started (PID 721562)
 
 ============================================================
          TEST: THROUGHPUT BENCHMARK (STRESS)                
@@ -857,17 +719,17 @@ Threads:      100
 ------------------------------------------------------------
                          RESULTS
 ------------------------------------------------------------
-Time:         4.71729 seconds
-Throughput:   211986 req/sec
+Time:         4.58187 seconds
+Throughput:   218251 req/sec
 Failures:     0
 ============================================================
 
-Stopping server (PID 440735)...
+Stopping server (PID 721562)...
 Stopped
 
 [NETWORK] bench_throughput (persistent)...
 Starting server on port 8080 (persistent=true)...
-Started (PID 440857)
+Started (PID 721728)
 
 ============================================================
          TEST: THROUGHPUT BENCHMARK (STRESS)                
@@ -878,17 +740,17 @@ Threads:      100
 ------------------------------------------------------------
                          RESULTS
 ------------------------------------------------------------
-Time:         4.91993 seconds
-Throughput:   203255 req/sec
+Time:         5.2749 seconds
+Throughput:   189577 req/sec
 Failures:     0
 ============================================================
 
-Stopping server (PID 440857)...
+Stopping server (PID 721728)...
 Stopped
 
 [NETWORK] bench_endurance (non-persistent)...
 Starting server on port 8080 (persistent=false)...
-Started (PID 440979)
+Started (PID 721919)
 
 ============================================================
          TEST: ENDURANCE TELEMETRY (10 MIN)                 
@@ -903,615 +765,615 @@ Threads:      100
 |  00:03  |         600000 |      200000 |  200000 |
 |  00:04  |         800000 |      200000 |  200000 |
 |  00:05  |        1000000 |      200000 |  200000 |
-|  00:06  |        1200000 |      200000 |  200000 |
-|  00:07  |        1400000 |      200000 |  200000 |
-|  00:08  |        1600000 |      200000 |  200000 |
-|  00:09  |        1800000 |      200000 |  200000 |
-|  00:10  |        1900000 |      100000 |  190000 |
-|  00:11  |        2100000 |      200000 |  190909 |
-|  00:12  |        2300000 |      200000 |  191666 |
-|  00:13  |        2400000 |      100000 |  184615 |
-|  00:14  |        2600000 |      200000 |  185714 |
-|  00:15  |        2800000 |      200000 |  186666 |
-|  00:16  |        2900000 |      100000 |  181250 |
-|  00:17  |        3100000 |      200000 |  182352 |
-|  00:18  |        3300000 |      200000 |  183333 |
-|  00:19  |        3400000 |      100000 |  178947 |
-|  00:20  |        3600000 |      200000 |  180000 |
-|  00:21  |        3800000 |      200000 |  180952 |
-|  00:22  |        3900000 |      100000 |  177272 |
-|  00:23  |        4100000 |      200000 |  178260 |
-|  00:24  |        4300000 |      200000 |  179166 |
-|  00:25  |        4400000 |      100000 |  176000 |
-|  00:26  |        4600000 |      200000 |  176923 |
-|  00:27  |        4800000 |      200000 |  177777 |
-|  00:28  |        4900000 |      100000 |  175000 |
-|  00:29  |        5100000 |      200000 |  175862 |
-|  00:30  |        5300000 |      200000 |  176666 |
-|  00:31  |        5400000 |      100000 |  174193 |
-|  00:32  |        5600000 |      200000 |  175000 |
-|  00:33  |        5800000 |      200000 |  175757 |
-|  00:34  |        5900000 |      100000 |  173529 |
-|  00:35  |        6100000 |      200000 |  174285 |
-|  00:36  |        6300000 |      200000 |  175000 |
-|  00:37  |        6400000 |      100000 |  172972 |
-|  00:38  |        6600000 |      200000 |  173684 |
-|  00:39  |        6800000 |      200000 |  174358 |
-|  00:40  |        6900000 |      100000 |  172500 |
-|  00:41  |        7100000 |      200000 |  173170 |
-|  00:42  |        7300000 |      200000 |  173809 |
-|  00:43  |        7400000 |      100000 |  172093 |
-|  00:44  |        7600000 |      200000 |  172727 |
-|  00:45  |        7800000 |      200000 |  173333 |
-|  00:46  |        7900000 |      100000 |  171739 |
-|  00:47  |        8100000 |      200000 |  172340 |
-|  00:48  |        8200000 |      100000 |  170833 |
-|  00:49  |        8400000 |      200000 |  171428 |
-|  00:50  |        8600000 |      200000 |  172000 |
-|  00:51  |        8700000 |      100000 |  170588 |
-|  00:52  |        8900000 |      200000 |  171153 |
-|  00:53  |        9100000 |      200000 |  171698 |
-|  00:54  |        9200000 |      100000 |  170370 |
-|  00:55  |        9400000 |      200000 |  170909 |
-|  00:56  |        9600000 |      200000 |  171428 |
-|  00:57  |        9700000 |      100000 |  170175 |
-|  00:58  |        9900000 |      200000 |  170689 |
-|  00:59  |       10100000 |      200000 |  171186 |
-|  01:00  |       10200000 |      100000 |  170000 |
-|  01:01  |       10400000 |      200000 |  170491 |
-|  01:02  |       10600000 |      200000 |  170967 |
-|  01:03  |       10700000 |      100000 |  169841 |
-|  01:04  |       10900000 |      200000 |  170312 |
-|  01:05  |       11100000 |      200000 |  170769 |
-|  01:06  |       11200000 |      100000 |  169696 |
-|  01:07  |       11400000 |      200000 |  170149 |
-|  01:08  |       11600000 |      200000 |  170588 |
-|  01:09  |       11700000 |      100000 |  169565 |
-|  01:10  |       11900000 |      200000 |  170000 |
-|  01:11  |       12100000 |      200000 |  170422 |
-|  01:12  |       12200000 |      100000 |  169444 |
-|  01:13  |       12400000 |      200000 |  169863 |
-|  01:14  |       12600000 |      200000 |  170270 |
-|  01:15  |       12700000 |      100000 |  169333 |
-|  01:16  |       12900000 |      200000 |  169736 |
-|  01:17  |       13100000 |      200000 |  170129 |
-|  01:18  |       13200000 |      100000 |  169230 |
-|  01:19  |       13400000 |      200000 |  169620 |
-|  01:20  |       13600000 |      200000 |  170000 |
-|  01:21  |       13700000 |      100000 |  169135 |
-|  01:22  |       13900000 |      200000 |  169512 |
-|  01:23  |       14100000 |      200000 |  169879 |
-|  01:24  |       14200000 |      100000 |  169047 |
-|  01:25  |       14400000 |      200000 |  169411 |
-|  01:26  |       14500000 |      100000 |  168604 |
-|  01:27  |       14700000 |      200000 |  168965 |
-|  01:28  |       14900000 |      200000 |  169318 |
-|  01:29  |       15000000 |      100000 |  168539 |
-|  01:30  |       15200000 |      200000 |  168888 |
-|  01:31  |       15400000 |      200000 |  169230 |
-|  01:32  |       15500000 |      100000 |  168478 |
-|  01:33  |       15700000 |      200000 |  168817 |
-|  01:34  |       15900000 |      200000 |  169148 |
-|  01:35  |       16000000 |      100000 |  168421 |
-|  01:36  |       16200000 |      200000 |  168750 |
-|  01:37  |       16400000 |      200000 |  169072 |
-|  01:38  |       16500000 |      100000 |  168367 |
-|  01:39  |       16700000 |      200000 |  168686 |
-|  01:40  |       16900000 |      200000 |  169000 |
-|  01:41  |       17000000 |      100000 |  168316 |
-|  01:42  |       17200000 |      200000 |  168627 |
-|  01:43  |       17400000 |      200000 |  168932 |
-|  01:44  |       17500000 |      100000 |  168269 |
-|  01:45  |       17700000 |      200000 |  168571 |
-|  01:46  |       17900000 |      200000 |  168867 |
-|  01:47  |       18000000 |      100000 |  168224 |
-|  01:48  |       18200000 |      200000 |  168518 |
-|  01:49  |       18400000 |      200000 |  168807 |
-|  01:50  |       18600000 |      200000 |  169090 |
-|  01:51  |       18700000 |      100000 |  168468 |
-|  01:52  |       18900000 |      200000 |  168750 |
-|  01:53  |       19100000 |      200000 |  169026 |
-|  01:54  |       19200000 |      100000 |  168421 |
-|  01:55  |       19400000 |      200000 |  168695 |
-|  01:56  |       19600000 |      200000 |  168965 |
-|  01:57  |       19700000 |      100000 |  168376 |
-|  01:58  |       19900000 |      200000 |  168644 |
-|  01:59  |       20100000 |      200000 |  168907 |
-|  02:00  |       20200000 |      100000 |  168333 |
-|  02:01  |       20400000 |      200000 |  168595 |
-|  02:02  |       20600000 |      200000 |  168852 |
-|  02:03  |       20700000 |      100000 |  168292 |
-|  02:04  |       20900000 |      200000 |  168548 |
-|  02:05  |       21100000 |      200000 |  168800 |
-|  02:06  |       21200000 |      100000 |  168253 |
-|  02:07  |       21400000 |      200000 |  168503 |
-|  02:08  |       21600000 |      200000 |  168750 |
-|  02:09  |       21700000 |      100000 |  168217 |
-|  02:10  |       21900000 |      200000 |  168461 |
-|  02:11  |       22100000 |      200000 |  168702 |
-|  02:12  |       22200000 |      100000 |  168181 |
-|  02:13  |       22400000 |      200000 |  168421 |
-|  02:14  |       22600000 |      200000 |  168656 |
-|  02:15  |       22700000 |      100000 |  168148 |
-|  02:16  |       22900000 |      200000 |  168382 |
-|  02:17  |       23100000 |      200000 |  168613 |
-|  02:18  |       23200000 |      100000 |  168115 |
-|  02:19  |       23400000 |      200000 |  168345 |
-|  02:20  |       23600000 |      200000 |  168571 |
-|  02:21  |       23700000 |      100000 |  168085 |
-|  02:22  |       23900000 |      200000 |  168309 |
-|  02:23  |       24100000 |      200000 |  168531 |
-|  02:24  |       24200000 |      100000 |  168055 |
-|  02:25  |       24400000 |      200000 |  168275 |
-|  02:26  |       24600000 |      200000 |  168493 |
-|  02:27  |       24700000 |      100000 |  168027 |
-|  02:28  |       24900000 |      200000 |  168243 |
-|  02:29  |       25000000 |      100000 |  167785 |
-|  02:30  |       25200000 |      200000 |  168000 |
-|  02:31  |       25400000 |      200000 |  168211 |
-|  02:32  |       25500000 |      100000 |  167763 |
-|  02:33  |       25700000 |      200000 |  167973 |
-|  02:34  |       25900000 |      200000 |  168181 |
-|  02:35  |       26000000 |      100000 |  167741 |
-|  02:36  |       26200000 |      200000 |  167948 |
-|  02:37  |       26400000 |      200000 |  168152 |
-|  02:38  |       26500000 |      100000 |  167721 |
-|  02:39  |       26700000 |      200000 |  167924 |
-|  02:40  |       26900000 |      200000 |  168125 |
-|  02:41  |       27000000 |      100000 |  167701 |
-|  02:42  |       27200000 |      200000 |  167901 |
-|  02:43  |       27400000 |      200000 |  168098 |
-|  02:44  |       27500000 |      100000 |  167682 |
-|  02:45  |       27700000 |      200000 |  167878 |
-|  02:46  |       27900000 |      200000 |  168072 |
-|  02:47  |       28000000 |      100000 |  167664 |
-|  02:48  |       28200000 |      200000 |  167857 |
-|  02:49  |       28388000 |      188000 |  167976 |
-|  02:50  |       28500000 |      112000 |  167647 |
-|  02:51  |       28700000 |      200000 |  167836 |
-|  02:52  |       28800000 |      100000 |  167441 |
-|  02:53  |       29000000 |      200000 |  167630 |
-|  02:54  |       29200000 |      200000 |  167816 |
-|  02:55  |       29300000 |      100000 |  167428 |
-|  02:56  |       29500000 |      200000 |  167613 |
-|  02:57  |       29600000 |      100000 |  167231 |
-|  02:58  |       29800000 |      200000 |  167415 |
-|  02:59  |       30000000 |      200000 |  167597 |
-|  03:00  |       30100000 |      100000 |  167222 |
-|  03:01  |       30300000 |      200000 |  167403 |
-|  03:02  |       30500000 |      200000 |  167582 |
-|  03:03  |       30600000 |      100000 |  167213 |
-|  03:04  |       30800000 |      200000 |  167391 |
-|  03:05  |       30900000 |      100000 |  167027 |
-|  03:06  |       31100000 |      200000 |  167204 |
-|  03:07  |       31300000 |      200000 |  167379 |
-|  03:08  |       31400000 |      100000 |  167021 |
-|  03:09  |       31600000 |      200000 |  167195 |
-|  03:10  |       31800000 |      200000 |  167368 |
-|  03:11  |       31900000 |      100000 |  167015 |
-|  03:12  |       32100000 |      200000 |  167187 |
-|  03:13  |       32300000 |      200000 |  167357 |
-|  03:14  |       32400000 |      100000 |  167010 |
-|  03:15  |       32600000 |      200000 |  167179 |
-|  03:16  |       32800000 |      200000 |  167346 |
-|  03:17  |       32900000 |      100000 |  167005 |
-|  03:18  |       33100000 |      200000 |  167171 |
-|  03:19  |       33300000 |      200000 |  167336 |
-|  03:20  |       33400000 |      100000 |  167000 |
-|  03:21  |       33600000 |      200000 |  167164 |
-|  03:22  |       33800000 |      200000 |  167326 |
-|  03:23  |       33900000 |      100000 |  166995 |
-|  03:24  |       34100000 |      200000 |  167156 |
-|  03:25  |       34300000 |      200000 |  167317 |
-|  03:26  |       34400000 |      100000 |  166990 |
-|  03:27  |       34600000 |      200000 |  167149 |
-|  03:28  |       34800000 |      200000 |  167307 |
-|  03:29  |       34900000 |      100000 |  166985 |
-|  03:30  |       35100000 |      200000 |  167142 |
-|  03:31  |       35300000 |      200000 |  167298 |
-|  03:32  |       35458000 |      158000 |  167254 |
-|  03:33  |       35600000 |      142000 |  167136 |
-|  03:34  |       35800000 |      200000 |  167289 |
-|  03:35  |       35900000 |      100000 |  166976 |
-|  03:36  |       36100000 |      200000 |  167129 |
-|  03:37  |       36300000 |      200000 |  167281 |
-|  03:38  |       36400000 |      100000 |  166972 |
-|  03:39  |       36600000 |      200000 |  167123 |
-|  03:40  |       36800000 |      200000 |  167272 |
-|  03:41  |       36900000 |      100000 |  166968 |
-|  03:42  |       37100000 |      200000 |  167117 |
-|  03:43  |       37300000 |      200000 |  167264 |
-|  03:44  |       37400000 |      100000 |  166964 |
-|  03:45  |       37600000 |      200000 |  167111 |
-|  03:46  |       37800000 |      200000 |  167256 |
-|  03:47  |       37900000 |      100000 |  166960 |
-|  03:48  |       38100000 |      200000 |  167105 |
-|  03:49  |       38300000 |      200000 |  167248 |
-|  03:50  |       38400000 |      100000 |  166956 |
-|  03:51  |       38600000 |      200000 |  167099 |
-|  03:52  |       38800000 |      200000 |  167241 |
-|  03:53  |       38900000 |      100000 |  166952 |
-|  03:54  |       39100000 |      200000 |  167094 |
-|  03:55  |       39300000 |      200000 |  167234 |
-|  03:56  |       39400000 |      100000 |  166949 |
-|  03:57  |       39600000 |      200000 |  167088 |
-|  03:58  |       39800000 |      200000 |  167226 |
-|  03:59  |       39900000 |      100000 |  166945 |
-|  04:00  |       40100000 |      200000 |  167083 |
-|  04:01  |       40300000 |      200000 |  167219 |
-|  04:02  |       40400000 |      100000 |  166942 |
-|  04:03  |       40600000 |      200000 |  167078 |
-|  04:04  |       40800000 |      200000 |  167213 |
-|  04:05  |       40900000 |      100000 |  166938 |
-|  04:06  |       41100000 |      200000 |  167073 |
-|  04:07  |       41300000 |      200000 |  167206 |
-|  04:08  |       41400000 |      100000 |  166935 |
-|  04:09  |       41600000 |      200000 |  167068 |
-|  04:10  |       41800000 |      200000 |  167200 |
-|  04:11  |       41900000 |      100000 |  166932 |
-|  04:12  |       42100000 |      200000 |  167063 |
-|  04:13  |       42200000 |      100000 |  166798 |
-|  04:14  |       42400000 |      200000 |  166929 |
-|  04:15  |       42600000 |      200000 |  167058 |
-|  04:16  |       42700000 |      100000 |  166796 |
-|  04:17  |       42900000 |      200000 |  166926 |
-|  04:18  |       43100000 |      200000 |  167054 |
-|  04:19  |       43200000 |      100000 |  166795 |
-|  04:20  |       43400000 |      200000 |  166923 |
-|  04:21  |       43600000 |      200000 |  167049 |
-|  04:22  |       43700000 |      100000 |  166793 |
-|  04:23  |       43900000 |      200000 |  166920 |
-|  04:24  |       44100000 |      200000 |  167045 |
-|  04:25  |       44200000 |      100000 |  166792 |
-|  04:26  |       44400000 |      200000 |  166917 |
-|  04:27  |       44600000 |      200000 |  167041 |
-|  04:28  |       44700000 |      100000 |  166791 |
-|  04:29  |       44900000 |      200000 |  166914 |
-|  04:30  |       45100000 |      200000 |  167037 |
-|  04:31  |       45200000 |      100000 |  166789 |
-|  04:32  |       45400000 |      200000 |  166911 |
-|  04:33  |       45600000 |      200000 |  167032 |
-|  04:34  |       45700000 |      100000 |  166788 |
-|  04:35  |       45900000 |      200000 |  166909 |
-|  04:36  |       46100000 |      200000 |  167028 |
-|  04:37  |       46200000 |      100000 |  166787 |
-|  04:38  |       46400000 |      200000 |  166906 |
-|  04:39  |       46600000 |      200000 |  167025 |
-|  04:40  |       46700000 |      100000 |  166785 |
-|  04:41  |       46900000 |      200000 |  166903 |
-|  04:42  |       47000000 |      100000 |  166666 |
-|  04:43  |       47200000 |      200000 |  166784 |
-|  04:44  |       47400000 |      200000 |  166901 |
-|  04:45  |       47500000 |      100000 |  166666 |
-|  04:46  |       47700000 |      200000 |  166783 |
-|  04:47  |       47900000 |      200000 |  166898 |
-|  04:48  |       48000000 |      100000 |  166666 |
-|  04:49  |       48200000 |      200000 |  166782 |
-|  04:50  |       48400000 |      200000 |  166896 |
-|  04:51  |       48500000 |      100000 |  166666 |
-|  04:52  |       48700000 |      200000 |  166780 |
-|  04:53  |       48855000 |      155000 |  166740 |
-|  04:54  |       49000000 |      145000 |  166666 |
-|  04:55  |       49200000 |      200000 |  166779 |
-|  04:56  |       49300000 |      100000 |  166554 |
-|  04:57  |       49500000 |      200000 |  166666 |
-|  04:58  |       49700000 |      200000 |  166778 |
-|  04:59  |       49800000 |      100000 |  166555 |
-|  05:00  |       50000000 |      200000 |  166666 |
-|  05:01  |       50200000 |      200000 |  166777 |
-|  05:02  |       50300000 |      100000 |  166556 |
-|  05:03  |       50500000 |      200000 |  166666 |
-|  05:04  |       50700000 |      200000 |  166776 |
-|  05:05  |       50800000 |      100000 |  166557 |
-|  05:06  |       51000000 |      200000 |  166666 |
-|  05:07  |       51200000 |      200000 |  166775 |
-|  05:08  |       51300000 |      100000 |  166558 |
-|  05:09  |       51500000 |      200000 |  166666 |
-|  05:10  |       51700000 |      200000 |  166774 |
-|  05:11  |       51800000 |      100000 |  166559 |
-|  05:12  |       52000000 |      200000 |  166666 |
-|  05:13  |       52200000 |      200000 |  166773 |
-|  05:14  |       52300000 |      100000 |  166560 |
-|  05:15  |       52500000 |      200000 |  166666 |
-|  05:16  |       52700000 |      200000 |  166772 |
-|  05:17  |       52800000 |      100000 |  166561 |
-|  05:18  |       53000000 |      200000 |  166666 |
-|  05:19  |       53200000 |      200000 |  166771 |
-|  05:20  |       53300000 |      100000 |  166562 |
-|  05:21  |       53500000 |      200000 |  166666 |
-|  05:22  |       53700000 |      200000 |  166770 |
-|  05:23  |       53800000 |      100000 |  166563 |
-|  05:24  |       54000000 |      200000 |  166666 |
-|  05:25  |       54200000 |      200000 |  166769 |
-|  05:26  |       54300000 |      100000 |  166564 |
-|  05:27  |       54500000 |      200000 |  166666 |
-|  05:28  |       54700000 |      200000 |  166768 |
-|  05:29  |       54800000 |      100000 |  166565 |
-|  05:30  |       55000000 |      200000 |  166666 |
-|  05:31  |       55200000 |      200000 |  166767 |
-|  05:32  |       55300000 |      100000 |  166566 |
-|  05:33  |       55500000 |      200000 |  166666 |
-|  05:34  |       55700000 |      200000 |  166766 |
-|  05:35  |       55800000 |      100000 |  166567 |
-|  05:36  |       56000000 |      200000 |  166666 |
-|  05:37  |       56200000 |      200000 |  166765 |
-|  05:38  |       56300000 |      100000 |  166568 |
-|  05:39  |       56500000 |      200000 |  166666 |
-|  05:40  |       56700000 |      200000 |  166764 |
-|  05:41  |       56800000 |      100000 |  166568 |
-|  05:42  |       57000000 |      200000 |  166666 |
-|  05:43  |       57200000 |      200000 |  166763 |
-|  05:44  |       57300000 |      100000 |  166569 |
-|  05:45  |       57500000 |      200000 |  166666 |
-|  05:46  |       57700000 |      200000 |  166763 |
-|  05:47  |       57800000 |      100000 |  166570 |
-|  05:48  |       58000000 |      200000 |  166666 |
-|  05:49  |       58200000 |      200000 |  166762 |
-|  05:50  |       58300000 |      100000 |  166571 |
-|  05:51  |       58500000 |      200000 |  166666 |
-|  05:52  |       58700000 |      200000 |  166761 |
-|  05:53  |       58800000 |      100000 |  166572 |
-|  05:54  |       59000000 |      200000 |  166666 |
-|  05:55  |       59103000 |      103000 |  166487 |
-|  05:56  |       59300000 |      197000 |  166573 |
-|  05:57  |       59500000 |      200000 |  166666 |
-|  05:58  |       59600000 |      100000 |  166480 |
-|  05:59  |       59700000 |      100000 |  166295 |
-|  06:00  |       59900000 |      200000 |  166388 |
-|  06:01  |       60000000 |      100000 |  166204 |
-|  06:02  |       60200000 |      200000 |  166298 |
-|  06:03  |       60400000 |      200000 |  166391 |
-|  06:04  |       60500000 |      100000 |  166208 |
-|  06:05  |       60700000 |      200000 |  166301 |
-|  06:06  |       60900000 |      200000 |  166393 |
-|  06:07  |       61000000 |      100000 |  166212 |
-|  06:08  |       61200000 |      200000 |  166304 |
-|  06:09  |       61400000 |      200000 |  166395 |
-|  06:10  |       61500000 |      100000 |  166216 |
-|  06:11  |       61700000 |      200000 |  166307 |
-|  06:12  |       61900000 |      200000 |  166397 |
-|  06:13  |       62000000 |      100000 |  166219 |
-|  06:14  |       62200000 |      200000 |  166310 |
-|  06:15  |       62400000 |      200000 |  166400 |
-|  06:16  |       62500000 |      100000 |  166223 |
-|  06:17  |       62700000 |      200000 |  166312 |
-|  06:18  |       62900000 |      200000 |  166402 |
-|  06:19  |       63000000 |      100000 |  166226 |
-|  06:20  |       63200000 |      200000 |  166315 |
-|  06:21  |       63399000 |      199000 |  166401 |
-|  06:22  |       63500000 |      101000 |  166230 |
-|  06:23  |       63700000 |      200000 |  166318 |
-|  06:24  |       63805000 |      105000 |  166158 |
-|  06:25  |       64000000 |      195000 |  166233 |
-|  06:26  |       64200000 |      200000 |  166321 |
-|  06:27  |       64300000 |      100000 |  166149 |
-|  06:28  |       64500000 |      200000 |  166237 |
-|  06:29  |       64700000 |      200000 |  166323 |
-|  06:30  |       64800000 |      100000 |  166153 |
-|  06:31  |       65000000 |      200000 |  166240 |
-|  06:32  |       65200000 |      200000 |  166326 |
-|  06:33  |       65300000 |      100000 |  166157 |
-|  06:34  |       65500000 |      200000 |  166243 |
-|  06:35  |       65698000 |      198000 |  166324 |
-|  06:36  |       65800000 |      102000 |  166161 |
-|  06:37  |       66000000 |      200000 |  166246 |
-|  06:38  |       66100000 |      100000 |  166080 |
-|  06:39  |       66300000 |      200000 |  166165 |
-|  06:40  |       66500000 |      200000 |  166250 |
-|  06:41  |       66600000 |      100000 |  166084 |
-|  06:42  |       66800000 |      200000 |  166169 |
-|  06:43  |       67000000 |      200000 |  166253 |
-|  06:44  |       67100000 |      100000 |  166089 |
-|  06:45  |       67300000 |      200000 |  166172 |
-|  06:46  |       67500000 |      200000 |  166256 |
-|  06:47  |       67600000 |      100000 |  166093 |
-|  06:48  |       67800000 |      200000 |  166176 |
-|  06:49  |       68000000 |      200000 |  166259 |
-|  06:50  |       68100000 |      100000 |  166097 |
-|  06:51  |       68300000 |      200000 |  166180 |
-|  06:52  |       68500000 |      200000 |  166262 |
-|  06:53  |       68600000 |      100000 |  166101 |
-|  06:54  |       68800000 |      200000 |  166183 |
-|  06:55  |       69000000 |      200000 |  166265 |
-|  06:56  |       69191000 |      191000 |  166324 |
-|  06:57  |       69300000 |      109000 |  166187 |
-|  06:58  |       69500000 |      200000 |  166267 |
-|  06:59  |       69600000 |      100000 |  166109 |
-|  07:00  |       69800000 |      200000 |  166190 |
-|  07:01  |       70000000 |      200000 |  166270 |
-|  07:02  |       70100000 |      100000 |  166113 |
-|  07:03  |       70300000 |      200000 |  166193 |
-|  07:04  |       70500000 |      200000 |  166273 |
-|  07:05  |       70600000 |      100000 |  166117 |
-|  07:06  |       70800000 |      200000 |  166197 |
-|  07:07  |       71000000 |      200000 |  166276 |
-|  07:08  |       71100000 |      100000 |  166121 |
-|  07:09  |       71300000 |      200000 |  166200 |
-|  07:10  |       71500000 |      200000 |  166279 |
-|  07:11  |       71600000 |      100000 |  166125 |
-|  07:12  |       71800000 |      200000 |  166203 |
-|  07:13  |       71900000 |      100000 |  166050 |
-|  07:14  |       72100000 |      200000 |  166129 |
-|  07:15  |       72300000 |      200000 |  166206 |
-|  07:16  |       72400000 |      100000 |  166055 |
-|  07:17  |       72600000 |      200000 |  166132 |
-|  07:18  |       72800000 |      200000 |  166210 |
-|  07:19  |       72900000 |      100000 |  166059 |
-|  07:20  |       73100000 |      200000 |  166136 |
-|  07:21  |       73300000 |      200000 |  166213 |
-|  07:22  |       73400000 |      100000 |  166063 |
-|  07:23  |       73600000 |      200000 |  166139 |
-|  07:24  |       73800000 |      200000 |  166216 |
-|  07:25  |       73900000 |      100000 |  166067 |
-|  07:26  |       74100000 |      200000 |  166143 |
-|  07:27  |       74300000 |      200000 |  166219 |
-|  07:28  |       74400000 |      100000 |  166071 |
-|  07:29  |       74600000 |      200000 |  166146 |
-|  07:30  |       74800000 |      200000 |  166222 |
-|  07:31  |       74922000 |      122000 |  166124 |
-|  07:32  |       75100000 |      178000 |  166150 |
-|  07:33  |       75300000 |      200000 |  166225 |
-|  07:34  |       75400000 |      100000 |  166079 |
-|  07:35  |       75600000 |      200000 |  166153 |
-|  07:36  |       75800000 |      200000 |  166228 |
-|  07:37  |       75900000 |      100000 |  166083 |
-|  07:38  |       76100000 |      200000 |  166157 |
-|  07:39  |       76300000 |      200000 |  166230 |
-|  07:40  |       76400000 |      100000 |  166086 |
-|  07:41  |       76600000 |      200000 |  166160 |
-|  07:42  |       76800000 |      200000 |  166233 |
-|  07:43  |       76900000 |      100000 |  166090 |
-|  07:44  |       77100000 |      200000 |  166163 |
-|  07:45  |       77300000 |      200000 |  166236 |
-|  07:46  |       77400000 |      100000 |  166094 |
-|  07:47  |       77600000 |      200000 |  166167 |
-|  07:48  |       77800000 |      200000 |  166239 |
-|  07:49  |       77900000 |      100000 |  166098 |
-|  07:50  |       78100000 |      200000 |  166170 |
-|  07:51  |       78300000 |      200000 |  166242 |
-|  07:52  |       78400000 |      100000 |  166101 |
-|  07:53  |       78600000 |      200000 |  166173 |
-|  07:54  |       78800000 |      200000 |  166244 |
-|  07:55  |       78900000 |      100000 |  166105 |
-|  07:56  |       79100000 |      200000 |  166176 |
-|  07:57  |       79300000 |      200000 |  166247 |
-|  07:58  |       79400000 |      100000 |  166108 |
-|  07:59  |       79600000 |      200000 |  166179 |
-|  08:00  |       79800000 |      200000 |  166250 |
-|  08:01  |       79900000 |      100000 |  166112 |
-|  08:02  |       80100000 |      200000 |  166182 |
-|  08:03  |       80300000 |      200000 |  166252 |
-|  08:04  |       80400000 |      100000 |  166115 |
-|  08:05  |       80600000 |      200000 |  166185 |
-|  08:06  |       80700000 |      100000 |  166049 |
-|  08:07  |       80900000 |      200000 |  166119 |
-|  08:08  |       81100000 |      200000 |  166188 |
-|  08:09  |       81200000 |      100000 |  166053 |
-|  08:10  |       81400000 |      200000 |  166122 |
-|  08:11  |       81600000 |      200000 |  166191 |
-|  08:12  |       81700000 |      100000 |  166056 |
-|  08:13  |       81900000 |      200000 |  166125 |
-|  08:14  |       82100000 |      200000 |  166194 |
-|  08:15  |       82200000 |      100000 |  166060 |
-|  08:16  |       82400000 |      200000 |  166129 |
-|  08:17  |       82576000 |      176000 |  166148 |
-|  08:18  |       82700000 |      124000 |  166064 |
-|  08:19  |       82900000 |      200000 |  166132 |
-|  08:20  |       83000000 |      100000 |  166000 |
-|  08:21  |       83200000 |      200000 |  166067 |
-|  08:22  |       83400000 |      200000 |  166135 |
-|  08:23  |       83500000 |      100000 |  166003 |
-|  08:24  |       83700000 |      200000 |  166071 |
-|  08:25  |       83900000 |      200000 |  166138 |
-|  08:26  |       84000000 |      100000 |  166007 |
-|  08:27  |       84200000 |      200000 |  166074 |
-|  08:28  |       84400000 |      200000 |  166141 |
-|  08:29  |       84500000 |      100000 |  166011 |
-|  08:30  |       84700000 |      200000 |  166078 |
-|  08:31  |       84900000 |      200000 |  166144 |
-|  08:32  |       85000000 |      100000 |  166015 |
-|  08:33  |       85200000 |      200000 |  166081 |
-|  08:34  |       85400000 |      200000 |  166147 |
-|  08:35  |       85500000 |      100000 |  166019 |
-|  08:36  |       85700000 |      200000 |  166085 |
-|  08:37  |       85900000 |      200000 |  166150 |
-|  08:38  |       86000000 |      100000 |  166023 |
-|  08:39  |       86200000 |      200000 |  166088 |
-|  08:40  |       86400000 |      200000 |  166153 |
-|  08:41  |       86500000 |      100000 |  166026 |
-|  08:42  |       86700000 |      200000 |  166091 |
-|  08:43  |       86900000 |      200000 |  166156 |
-|  08:44  |       87000000 |      100000 |  166030 |
-|  08:45  |       87200000 |      200000 |  166095 |
-|  08:46  |       87400000 |      200000 |  166159 |
-|  08:47  |       87500000 |      100000 |  166034 |
-|  08:48  |       87700000 |      200000 |  166098 |
-|  08:49  |       87900000 |      200000 |  166162 |
-|  08:50  |       88000000 |      100000 |  166037 |
-|  08:51  |       88200000 |      200000 |  166101 |
-|  08:52  |       88400000 |      200000 |  166165 |
-|  08:53  |       88500000 |      100000 |  166041 |
-|  08:54  |       88700000 |      200000 |  166104 |
-|  08:55  |       88900000 |      200000 |  166168 |
-|  08:56  |       89000000 |      100000 |  166044 |
-|  08:57  |       89200000 |      200000 |  166108 |
-|  08:58  |       89300000 |      100000 |  165985 |
-|  08:59  |       89500000 |      200000 |  166048 |
-|  09:00  |       89700000 |      200000 |  166111 |
-|  09:01  |       89813000 |      113000 |  166012 |
-|  09:02  |       90000000 |      187000 |  166051 |
-|  09:03  |       90200000 |      200000 |  166114 |
-|  09:04  |       90315000 |      115000 |  166020 |
-|  09:05  |       90500000 |      185000 |  166055 |
-|  09:06  |       90700000 |      200000 |  166117 |
-|  09:07  |       90800000 |      100000 |  165996 |
-|  09:08  |       91000000 |      200000 |  166058 |
-|  09:09  |       91200000 |      200000 |  166120 |
-|  09:10  |       91300000 |      100000 |  166000 |
-|  09:11  |       91500000 |      200000 |  166061 |
-|  09:12  |       91700000 |      200000 |  166123 |
-|  09:13  |       91800000 |      100000 |  166003 |
-|  09:14  |       92000000 |      200000 |  166064 |
-|  09:15  |       92200000 |      200000 |  166126 |
-|  09:16  |       92300000 |      100000 |  166007 |
-|  09:17  |       92500000 |      200000 |  166068 |
-|  09:18  |       92700000 |      200000 |  166129 |
-|  09:19  |       92800000 |      100000 |  166010 |
-|  09:20  |       93000000 |      200000 |  166071 |
-|  09:21  |       93200000 |      200000 |  166131 |
-|  09:22  |       93300000 |      100000 |  166014 |
-|  09:23  |       93500000 |      200000 |  166074 |
-|  09:24  |       93600000 |      100000 |  165957 |
-|  09:25  |       93800000 |      200000 |  166017 |
-|  09:26  |       94000000 |      200000 |  166077 |
-|  09:27  |       94100000 |      100000 |  165961 |
-|  09:28  |       94300000 |      200000 |  166021 |
-|  09:29  |       94500000 |      200000 |  166080 |
-|  09:30  |       94600000 |      100000 |  165964 |
-|  09:31  |       94800000 |      200000 |  166024 |
-|  09:32  |       95000000 |      200000 |  166083 |
-|  09:33  |       95100000 |      100000 |  165968 |
-|  09:34  |       95300000 |      200000 |  166027 |
-|  09:35  |       95500000 |      200000 |  166086 |
-|  09:36  |       95600000 |      100000 |  165972 |
-|  09:37  |       95800000 |      200000 |  166031 |
-|  09:38  |       96000000 |      200000 |  166089 |
-|  09:39  |       96100000 |      100000 |  165975 |
-|  09:40  |       96300000 |      200000 |  166034 |
-|  09:41  |       96500000 |      200000 |  166092 |
-|  09:42  |       96600000 |      100000 |  165979 |
-|  09:43  |       96800000 |      200000 |  166037 |
-|  09:44  |       97000000 |      200000 |  166095 |
-|  09:45  |       97100000 |      100000 |  165982 |
-|  09:46  |       97300000 |      200000 |  166040 |
-|  09:47  |       97500000 |      200000 |  166098 |
-|  09:48  |       97600000 |      100000 |  165986 |
-|  09:49  |       97800000 |      200000 |  166044 |
-|  09:50  |       98000000 |      200000 |  166101 |
-|  09:51  |       98100000 |      100000 |  165989 |
-|  09:52  |       98300000 |      200000 |  166047 |
-|  09:53  |       98413000 |      113000 |  165957 |
-|  09:54  |       98600000 |      187000 |  165993 |
-|  09:55  |       98800000 |      200000 |  166050 |
-|  09:56  |       98900000 |      100000 |  165939 |
-|  09:57  |       99100000 |      200000 |  165996 |
-|  09:58  |       99300000 |      200000 |  166053 |
-|  09:59  |       99400000 |      100000 |  165943 |
-|  10:00  |       99600000 |      200000 |  166000 |
+|  00:06  |        1300000 |      300000 |  216666 |
+|  00:07  |        1500000 |      200000 |  214285 |
+|  00:08  |        1700000 |      200000 |  212500 |
+|  00:09  |        1900000 |      200000 |  211111 |
+|  00:10  |        2100000 |      200000 |  210000 |
+|  00:11  |        2300000 |      200000 |  209090 |
+|  00:12  |        2500000 |      200000 |  208333 |
+|  00:13  |        2700000 |      200000 |  207692 |
+|  00:14  |        2900000 |      200000 |  207142 |
+|  00:15  |        3188000 |      288000 |  212533 |
+|  00:16  |        3400000 |      212000 |  212500 |
+|  00:17  |        3600000 |      200000 |  211764 |
+|  00:18  |        3800000 |      200000 |  211111 |
+|  00:19  |        4000000 |      200000 |  210526 |
+|  00:20  |        4200000 |      200000 |  210000 |
+|  00:21  |        4400000 |      200000 |  209523 |
+|  00:22  |        4600000 |      200000 |  209090 |
+|  00:23  |        4800000 |      200000 |  208695 |
+|  00:24  |        5000000 |      200000 |  208333 |
+|  00:25  |        5200000 |      200000 |  208000 |
+|  00:26  |        5499000 |      299000 |  211500 |
+|  00:27  |        5700000 |      201000 |  211111 |
+|  00:28  |        5900000 |      200000 |  210714 |
+|  00:29  |        6100000 |      200000 |  210344 |
+|  00:30  |        6300000 |      200000 |  210000 |
+|  00:31  |        6500000 |      200000 |  209677 |
+|  00:32  |        6700000 |      200000 |  209375 |
+|  00:33  |        6900000 |      200000 |  209090 |
+|  00:34  |        7100000 |      200000 |  208823 |
+|  00:35  |        7200000 |      100000 |  205714 |
+|  00:36  |        7400000 |      200000 |  205555 |
+|  00:37  |        7600000 |      200000 |  205405 |
+|  00:38  |        7740000 |      140000 |  203684 |
+|  00:39  |        7900000 |      160000 |  202564 |
+|  00:40  |        8100000 |      200000 |  202500 |
+|  00:41  |        8300000 |      200000 |  202439 |
+|  00:42  |        8400000 |      100000 |  200000 |
+|  00:43  |        8600000 |      200000 |  200000 |
+|  00:44  |        8800000 |      200000 |  200000 |
+|  00:45  |        9000000 |      200000 |  200000 |
+|  00:46  |        9100000 |      100000 |  197826 |
+|  00:47  |        9300000 |      200000 |  197872 |
+|  00:48  |        9500000 |      200000 |  197916 |
+|  00:49  |        9700000 |      200000 |  197959 |
+|  00:50  |        9800000 |      100000 |  196000 |
+|  00:51  |       10000000 |      200000 |  196078 |
+|  00:52  |       10200000 |      200000 |  196153 |
+|  00:53  |       10400000 |      200000 |  196226 |
+|  00:54  |       10500000 |      100000 |  194444 |
+|  00:55  |       10700000 |      200000 |  194545 |
+|  00:56  |       10900000 |      200000 |  194642 |
+|  00:57  |       11100000 |      200000 |  194736 |
+|  00:58  |       11200000 |      100000 |  193103 |
+|  00:59  |       11400000 |      200000 |  193220 |
+|  01:00  |       11600000 |      200000 |  193333 |
+|  01:01  |       11800000 |      200000 |  193442 |
+|  01:02  |       11900000 |      100000 |  191935 |
+|  01:03  |       12100000 |      200000 |  192063 |
+|  01:04  |       12300000 |      200000 |  192187 |
+|  01:05  |       12500000 |      200000 |  192307 |
+|  01:06  |       12600000 |      100000 |  190909 |
+|  01:07  |       12800000 |      200000 |  191044 |
+|  01:08  |       13000000 |      200000 |  191176 |
+|  01:09  |       13200000 |      200000 |  191304 |
+|  01:10  |       13300000 |      100000 |  190000 |
+|  01:11  |       13500000 |      200000 |  190140 |
+|  01:12  |       13700000 |      200000 |  190277 |
+|  01:13  |       13899000 |      199000 |  190397 |
+|  01:14  |       14000000 |      101000 |  189189 |
+|  01:15  |       14200000 |      200000 |  189333 |
+|  01:16  |       14400000 |      200000 |  189473 |
+|  01:17  |       14500000 |      100000 |  188311 |
+|  01:18  |       14700000 |      200000 |  188461 |
+|  01:19  |       14900000 |      200000 |  188607 |
+|  01:20  |       15100000 |      200000 |  188750 |
+|  01:21  |       15200000 |      100000 |  187654 |
+|  01:22  |       15400000 |      200000 |  187804 |
+|  01:23  |       15600000 |      200000 |  187951 |
+|  01:24  |       15800000 |      200000 |  188095 |
+|  01:25  |       15900000 |      100000 |  187058 |
+|  01:26  |       16100000 |      200000 |  187209 |
+|  01:27  |       16300000 |      200000 |  187356 |
+|  01:28  |       16500000 |      200000 |  187500 |
+|  01:29  |       16605000 |      105000 |  186573 |
+|  01:30  |       16800000 |      195000 |  186666 |
+|  01:31  |       17000000 |      200000 |  186813 |
+|  01:32  |       17200000 |      200000 |  186956 |
+|  01:33  |       17300000 |      100000 |  186021 |
+|  01:34  |       17500000 |      200000 |  186170 |
+|  01:35  |       17700000 |      200000 |  186315 |
+|  01:36  |       17900000 |      200000 |  186458 |
+|  01:37  |       18030000 |      130000 |  185876 |
+|  01:38  |       18200000 |      170000 |  185714 |
+|  01:39  |       18400000 |      200000 |  185858 |
+|  01:40  |       18600000 |      200000 |  186000 |
+|  01:41  |       18800000 |      200000 |  186138 |
+|  01:42  |       18900000 |      100000 |  185294 |
+|  01:43  |       19100000 |      200000 |  185436 |
+|  01:44  |       19300000 |      200000 |  185576 |
+|  01:45  |       19400000 |      100000 |  184761 |
+|  01:46  |       19600000 |      200000 |  184905 |
+|  01:47  |       19800000 |      200000 |  185046 |
+|  01:48  |       20000000 |      200000 |  185185 |
+|  01:49  |       20100000 |      100000 |  184403 |
+|  01:50  |       20300000 |      200000 |  184545 |
+|  01:51  |       20500000 |      200000 |  184684 |
+|  01:52  |       20700000 |      200000 |  184821 |
+|  01:53  |       20800000 |      100000 |  184070 |
+|  01:54  |       21000000 |      200000 |  184210 |
+|  01:55  |       21200000 |      200000 |  184347 |
+|  01:56  |       21400000 |      200000 |  184482 |
+|  01:57  |       21575000 |      175000 |  184401 |
+|  01:58  |       21700000 |      125000 |  183898 |
+|  01:59  |       21900000 |      200000 |  184033 |
+|  02:00  |       22100000 |      200000 |  184166 |
+|  02:01  |       22299000 |      199000 |  184289 |
+|  02:02  |       22400000 |      101000 |  183606 |
+|  02:03  |       22600000 |      200000 |  183739 |
+|  02:04  |       22800000 |      200000 |  183870 |
+|  02:05  |       22999000 |      199000 |  183992 |
+|  02:06  |       23100000 |      101000 |  183333 |
+|  02:07  |       23300000 |      200000 |  183464 |
+|  02:08  |       23500000 |      200000 |  183593 |
+|  02:09  |       23700000 |      200000 |  183720 |
+|  02:10  |       23800000 |      100000 |  183076 |
+|  02:11  |       24000000 |      200000 |  183206 |
+|  02:12  |       24200000 |      200000 |  183333 |
+|  02:13  |       24300000 |      100000 |  182706 |
+|  02:14  |       24500000 |      200000 |  182835 |
+|  02:15  |       24700000 |      200000 |  182962 |
+|  02:16  |       24900000 |      200000 |  183088 |
+|  02:17  |       25000000 |      100000 |  182481 |
+|  02:18  |       25200000 |      200000 |  182608 |
+|  02:19  |       25400000 |      200000 |  182733 |
+|  02:20  |       25600000 |      200000 |  182857 |
+|  02:21  |       25700000 |      100000 |  182269 |
+|  02:22  |       25900000 |      200000 |  182394 |
+|  02:23  |       26100000 |      200000 |  182517 |
+|  02:24  |       26300000 |      200000 |  182638 |
+|  02:25  |       26400000 |      100000 |  182068 |
+|  02:26  |       26600000 |      200000 |  182191 |
+|  02:27  |       26800000 |      200000 |  182312 |
+|  02:28  |       26900000 |      100000 |  181756 |
+|  02:29  |       27100000 |      200000 |  181879 |
+|  02:30  |       27300000 |      200000 |  182000 |
+|  02:31  |       27496000 |      196000 |  182092 |
+|  02:32  |       27600000 |      104000 |  181578 |
+|  02:33  |       27800000 |      200000 |  181699 |
+|  02:34  |       28000000 |      200000 |  181818 |
+|  02:35  |       28100000 |      100000 |  181290 |
+|  02:36  |       28300000 |      200000 |  181410 |
+|  02:37  |       28500000 |      200000 |  181528 |
+|  02:38  |       28698000 |      198000 |  181632 |
+|  02:39  |       28800000 |      102000 |  181132 |
+|  02:40  |       29000000 |      200000 |  181250 |
+|  02:41  |       29200000 |      200000 |  181366 |
+|  02:42  |       29300000 |      100000 |  180864 |
+|  02:43  |       29500000 |      200000 |  180981 |
+|  02:44  |       29700000 |      200000 |  181097 |
+|  02:45  |       29853000 |      153000 |  180927 |
+|  02:46  |       30000000 |      147000 |  180722 |
+|  02:47  |       30200000 |      200000 |  180838 |
+|  02:48  |       30400000 |      200000 |  180952 |
+|  02:49  |       30500000 |      100000 |  180473 |
+|  02:50  |       30700000 |      200000 |  180588 |
+|  02:51  |       30900000 |      200000 |  180701 |
+|  02:52  |       31100000 |      200000 |  180813 |
+|  02:53  |       31220000 |      120000 |  180462 |
+|  02:54  |       31400000 |      180000 |  180459 |
+|  02:55  |       31600000 |      200000 |  180571 |
+|  02:56  |       31800000 |      200000 |  180681 |
+|  02:57  |       32000000 |      200000 |  180790 |
+|  02:58  |       32100000 |      100000 |  180337 |
+|  02:59  |       32300000 |      200000 |  180446 |
+|  03:00  |       32500000 |      200000 |  180555 |
+|  03:01  |       32700000 |      200000 |  180662 |
+|  03:02  |       32811000 |      111000 |  180280 |
+|  03:03  |       33000000 |      189000 |  180327 |
+|  03:04  |       33200000 |      200000 |  180434 |
+|  03:05  |       33400000 |      200000 |  180540 |
+|  03:06  |       33500000 |      100000 |  180107 |
+|  03:07  |       33700000 |      200000 |  180213 |
+|  03:08  |       33900000 |      200000 |  180319 |
+|  03:09  |       34100000 |      200000 |  180423 |
+|  03:10  |       34298000 |      198000 |  180515 |
+|  03:11  |       34400000 |      102000 |  180104 |
+|  03:12  |       34600000 |      200000 |  180208 |
+|  03:13  |       34800000 |      200000 |  180310 |
+|  03:14  |       35000000 |      200000 |  180412 |
+|  03:15  |       35106000 |      106000 |  180030 |
+|  03:16  |       35300000 |      194000 |  180102 |
+|  03:17  |       35500000 |      200000 |  180203 |
+|  03:18  |       35700000 |      200000 |  180303 |
+|  03:19  |       35801000 |      101000 |  179904 |
+|  03:20  |       36000000 |      199000 |  180000 |
+|  03:21  |       36200000 |      200000 |  180099 |
+|  03:22  |       36400000 |      200000 |  180198 |
+|  03:23  |       36538000 |      138000 |  179990 |
+|  03:24  |       36700000 |      162000 |  179901 |
+|  03:25  |       36900000 |      200000 |  180000 |
+|  03:26  |       37100000 |      200000 |  180097 |
+|  03:27  |       37300000 |      200000 |  180193 |
+|  03:28  |       37400000 |      100000 |  179807 |
+|  03:29  |       37600000 |      200000 |  179904 |
+|  03:30  |       37800000 |      200000 |  180000 |
+|  03:31  |       38000000 |      200000 |  180094 |
+|  03:32  |       38140000 |      140000 |  179905 |
+|  03:33  |       38300000 |      160000 |  179812 |
+|  03:34  |       38500000 |      200000 |  179906 |
+|  03:35  |       38700000 |      200000 |  180000 |
+|  03:36  |       38888000 |      188000 |  180037 |
+|  03:37  |       39000000 |      112000 |  179723 |
+|  03:38  |       39200000 |      200000 |  179816 |
+|  03:39  |       39400000 |      200000 |  179908 |
+|  03:40  |       39600000 |      200000 |  180000 |
+|  03:41  |       39765000 |      165000 |  179932 |
+|  03:42  |       39900000 |      135000 |  179729 |
+|  03:43  |       40100000 |      200000 |  179820 |
+|  03:44  |       40300000 |      200000 |  179910 |
+|  03:45  |       40484000 |      184000 |  179928 |
+|  03:46  |       40600000 |      116000 |  179646 |
+|  03:47  |       40800000 |      200000 |  179735 |
+|  03:48  |       41000000 |      200000 |  179824 |
+|  03:49  |       41200000 |      200000 |  179912 |
+|  03:50  |       41362000 |      162000 |  179834 |
+|  03:51  |       41500000 |      138000 |  179653 |
+|  03:52  |       41700000 |      200000 |  179741 |
+|  03:53  |       41900000 |      200000 |  179828 |
+|  03:54  |       42099000 |      199000 |  179910 |
+|  03:55  |       42200000 |      101000 |  179574 |
+|  03:56  |       42400000 |      200000 |  179661 |
+|  03:57  |       42600000 |      200000 |  179746 |
+|  03:58  |       42800000 |      200000 |  179831 |
+|  03:59  |       42900000 |      100000 |  179497 |
+|  04:00  |       43100000 |      200000 |  179583 |
+|  04:01  |       43300000 |      200000 |  179668 |
+|  04:02  |       43499000 |      199000 |  179747 |
+|  04:03  |       43600000 |      101000 |  179423 |
+|  04:04  |       43800000 |      200000 |  179508 |
+|  04:05  |       44000000 |      200000 |  179591 |
+|  04:06  |       44200000 |      200000 |  179674 |
+|  04:07  |       44301000 |      101000 |  179356 |
+|  04:08  |       44500000 |      199000 |  179435 |
+|  04:09  |       44700000 |      200000 |  179518 |
+|  04:10  |       44900000 |      200000 |  179600 |
+|  04:11  |       45056000 |      156000 |  179505 |
+|  04:12  |       45200000 |      144000 |  179365 |
+|  04:13  |       45400000 |      200000 |  179446 |
+|  04:14  |       45600000 |      200000 |  179527 |
+|  04:15  |       45742000 |      142000 |  179380 |
+|  04:16  |       45900000 |      158000 |  179296 |
+|  04:17  |       46002000 |      102000 |  178996 |
+|  04:18  |       46200000 |      198000 |  179069 |
+|  04:19  |       46400000 |      200000 |  179150 |
+|  04:20  |       46597000 |      197000 |  179219 |
+|  04:21  |       46700000 |      103000 |  178927 |
+|  04:22  |       46900000 |      200000 |  179007 |
+|  04:23  |       47100000 |      200000 |  179087 |
+|  04:24  |       47202000 |      102000 |  178795 |
+|  04:25  |       47400000 |      198000 |  178867 |
+|  04:26  |       47600000 |      200000 |  178947 |
+|  04:27  |       47700000 |      100000 |  178651 |
+|  04:28  |       47894000 |      194000 |  178708 |
+|  04:29  |       48000000 |      106000 |  178438 |
+|  04:30  |       48166000 |      166000 |  178392 |
+|  04:31  |       48300000 |      134000 |  178228 |
+|  04:32  |       48450000 |      150000 |  178125 |
+|  04:33  |       48600000 |      150000 |  178021 |
+|  04:34  |       48800000 |      200000 |  178102 |
+|  04:35  |       49000000 |      200000 |  178181 |
+|  04:36  |       49200000 |      200000 |  178260 |
+|  04:37  |       49399000 |      199000 |  178335 |
+|  04:38  |       49502000 |      103000 |  178064 |
+|  04:39  |       49700000 |      198000 |  178136 |
+|  04:40  |       49900000 |      200000 |  178214 |
+|  04:41  |       50100000 |      200000 |  178291 |
+|  04:42  |       50300000 |      200000 |  178368 |
+|  04:43  |       50498000 |      198000 |  178438 |
+|  04:44  |       50602000 |      104000 |  178176 |
+|  04:45  |       50800000 |      198000 |  178245 |
+|  04:46  |       51000000 |      200000 |  178321 |
+|  04:47  |       51200000 |      200000 |  178397 |
+|  04:48  |       51400000 |      200000 |  178472 |
+|  04:49  |       51600000 |      200000 |  178546 |
+|  04:50  |       51781000 |      181000 |  178555 |
+|  04:51  |       51900000 |      119000 |  178350 |
+|  04:52  |       52100000 |      200000 |  178424 |
+|  04:53  |       52300000 |      200000 |  178498 |
+|  04:54  |       52500000 |      200000 |  178571 |
+|  04:55  |       52700000 |      200000 |  178644 |
+|  04:56  |       52887000 |      187000 |  178672 |
+|  04:57  |       53000000 |      113000 |  178451 |
+|  04:58  |       53200000 |      200000 |  178523 |
+|  04:59  |       53400000 |      200000 |  178595 |
+|  05:00  |       53600000 |      200000 |  178666 |
+|  05:01  |       53800000 |      200000 |  178737 |
+|  05:02  |       54000000 |      200000 |  178807 |
+|  05:03  |       54180000 |      180000 |  178811 |
+|  05:04  |       54300000 |      120000 |  178618 |
+|  05:05  |       54500000 |      200000 |  178688 |
+|  05:06  |       54700000 |      200000 |  178758 |
+|  05:07  |       54900000 |      200000 |  178827 |
+|  05:08  |       55100000 |      200000 |  178896 |
+|  05:09  |       55291000 |      191000 |  178935 |
+|  05:10  |       55425000 |      134000 |  178790 |
+|  05:11  |       55600000 |      175000 |  178778 |
+|  05:12  |       55800000 |      200000 |  178846 |
+|  05:13  |       56000000 |      200000 |  178913 |
+|  05:14  |       56200000 |      200000 |  178980 |
+|  05:15  |       56398000 |      198000 |  179041 |
+|  05:16  |       56528000 |      130000 |  178886 |
+|  05:17  |       56700000 |      172000 |  178864 |
+|  05:18  |       56900000 |      200000 |  178930 |
+|  05:19  |       57100000 |      200000 |  178996 |
+|  05:20  |       57300000 |      200000 |  179062 |
+|  05:21  |       57500000 |      200000 |  179127 |
+|  05:22  |       57689000 |      189000 |  179158 |
+|  05:23  |       57811000 |      122000 |  178981 |
+|  05:24  |       58000000 |      189000 |  179012 |
+|  05:25  |       58200000 |      200000 |  179076 |
+|  05:26  |       58400000 |      200000 |  179141 |
+|  05:27  |       58600000 |      200000 |  179204 |
+|  05:28  |       58800000 |      200000 |  179268 |
+|  05:29  |       58965000 |      165000 |  179224 |
+|  05:30  |       59104000 |      139000 |  179103 |
+|  05:31  |       59300000 |      196000 |  179154 |
+|  05:32  |       59500000 |      200000 |  179216 |
+|  05:33  |       59600000 |      100000 |  178978 |
+|  05:34  |       59800000 |      200000 |  179041 |
+|  05:35  |       59985000 |      185000 |  179059 |
+|  05:36  |       60105000 |      120000 |  178883 |
+|  05:37  |       60300000 |      195000 |  178931 |
+|  05:38  |       60500000 |      200000 |  178994 |
+|  05:39  |       60700000 |      200000 |  179056 |
+|  05:40  |       60900000 |      200000 |  179117 |
+|  05:41  |       61087000 |      187000 |  179140 |
+|  05:42  |       61216000 |      129000 |  178994 |
+|  05:43  |       61400000 |      184000 |  179008 |
+|  05:44  |       61600000 |      200000 |  179069 |
+|  05:45  |       61800000 |      200000 |  179130 |
+|  05:46  |       62000000 |      200000 |  179190 |
+|  05:47  |       62200000 |      200000 |  179250 |
+|  05:48  |       62397000 |      197000 |  179301 |
+|  05:49  |       62546000 |      149000 |  179214 |
+|  05:50  |       62702000 |      156000 |  179148 |
+|  05:51  |       62900000 |      198000 |  179202 |
+|  05:52  |       63100000 |      200000 |  179261 |
+|  05:53  |       63300000 |      200000 |  179320 |
+|  05:54  |       63500000 |      200000 |  179378 |
+|  05:55  |       63667000 |      167000 |  179343 |
+|  05:56  |       63826000 |      159000 |  179286 |
+|  05:57  |       64000000 |      174000 |  179271 |
+|  05:58  |       64200000 |      200000 |  179329 |
+|  05:59  |       64400000 |      200000 |  179387 |
+|  06:00  |       64600000 |      200000 |  179444 |
+|  06:01  |       64800000 |      200000 |  179501 |
+|  06:02  |       64945000 |      145000 |  179406 |
+|  06:03  |       65105000 |      160000 |  179352 |
+|  06:04  |       65300000 |      195000 |  179395 |
+|  06:05  |       65500000 |      200000 |  179452 |
+|  06:06  |       65700000 |      200000 |  179508 |
+|  06:07  |       65900000 |      200000 |  179564 |
+|  06:08  |       66099000 |      199000 |  179616 |
+|  06:09  |       66269000 |      170000 |  179590 |
+|  06:10  |       66400000 |      131000 |  179459 |
+|  06:11  |       66600000 |      200000 |  179514 |
+|  06:12  |       66800000 |      200000 |  179569 |
+|  06:13  |       67000000 |      200000 |  179624 |
+|  06:14  |       67200000 |      200000 |  179679 |
+|  06:15  |       67385000 |      185000 |  179693 |
+|  06:16  |       67521000 |      136000 |  179577 |
+|  06:17  |       67700000 |      179000 |  179575 |
+|  06:18  |       67900000 |      200000 |  179629 |
+|  06:19  |       68100000 |      200000 |  179683 |
+|  06:20  |       68300000 |      200000 |  179736 |
+|  06:21  |       68498000 |      198000 |  179784 |
+|  06:22  |       68675000 |      177000 |  179777 |
+|  06:23  |       68805000 |      130000 |  179647 |
+|  06:24  |       69000000 |      195000 |  179687 |
+|  06:25  |       69200000 |      200000 |  179740 |
+|  06:26  |       69400000 |      200000 |  179792 |
+|  06:27  |       69600000 |      200000 |  179844 |
+|  06:28  |       69798000 |      198000 |  179891 |
+|  06:29  |       69949000 |      151000 |  179817 |
+|  06:30  |       70108000 |      159000 |  179764 |
+|  06:31  |       70300000 |      192000 |  179795 |
+|  06:32  |       70500000 |      200000 |  179846 |
+|  06:33  |       70700000 |      200000 |  179898 |
+|  06:34  |       70899000 |      199000 |  179946 |
+|  06:35  |       71084000 |      185000 |  179959 |
+|  06:36  |       71239000 |      155000 |  179896 |
+|  06:37  |       71401000 |      162000 |  179851 |
+|  06:38  |       71600000 |      199000 |  179899 |
+|  06:39  |       71800000 |      200000 |  179949 |
+|  06:40  |       72000000 |      200000 |  180000 |
+|  06:41  |       72200000 |      200000 |  180049 |
+|  06:42  |       72378000 |      178000 |  180044 |
+|  06:43  |       72531000 |      153000 |  179977 |
+|  06:44  |       72700000 |      169000 |  179950 |
+|  06:45  |       72900000 |      200000 |  180000 |
+|  06:46  |       73100000 |      200000 |  180049 |
+|  06:47  |       73300000 |      200000 |  180098 |
+|  06:48  |       73499000 |      199000 |  180144 |
+|  06:49  |       73681000 |      182000 |  180149 |
+|  06:50  |       73835000 |      154000 |  180085 |
+|  06:51  |       74000000 |      165000 |  180048 |
+|  06:52  |       74200000 |      200000 |  180097 |
+|  06:53  |       74400000 |      200000 |  180145 |
+|  06:54  |       74599000 |      199000 |  180190 |
+|  06:55  |       74780000 |      181000 |  180192 |
+|  06:56  |       74931000 |      151000 |  180122 |
+|  06:57  |       75100000 |      169000 |  180095 |
+|  06:58  |       75300000 |      200000 |  180143 |
+|  06:59  |       75500000 |      200000 |  180190 |
+|  07:00  |       75700000 |      200000 |  180238 |
+|  07:01  |       75897000 |      197000 |  180277 |
+|  07:02  |       76069000 |      172000 |  180258 |
+|  07:03  |       76205000 |      136000 |  180153 |
+|  07:04  |       76400000 |      195000 |  180188 |
+|  07:05  |       76600000 |      200000 |  180235 |
+|  07:06  |       76800000 |      200000 |  180281 |
+|  07:07  |       76999000 |      199000 |  180325 |
+|  07:08  |       77174000 |      175000 |  180313 |
+|  07:09  |       77312000 |      138000 |  180214 |
+|  07:10  |       77500000 |      188000 |  180232 |
+|  07:11  |       77700000 |      200000 |  180278 |
+|  07:12  |       77900000 |      200000 |  180324 |
+|  07:13  |       78096000 |      196000 |  180360 |
+|  07:14  |       78255000 |      159000 |  180311 |
+|  07:15  |       78403000 |      148000 |  180236 |
+|  07:16  |       78600000 |      197000 |  180275 |
+|  07:17  |       78800000 |      200000 |  180320 |
+|  07:18  |       79000000 |      200000 |  180365 |
+|  07:19  |       79198000 |      198000 |  180405 |
+|  07:20  |       79381000 |      183000 |  180411 |
+|  07:21  |       79535000 |      154000 |  180351 |
+|  07:22  |       79702000 |      167000 |  180321 |
+|  07:23  |       79900000 |      198000 |  180361 |
+|  07:24  |       80100000 |      200000 |  180405 |
+|  07:25  |       80300000 |      200000 |  180449 |
+|  07:26  |       80495000 |      195000 |  180482 |
+|  07:27  |       80673000 |      178000 |  180476 |
+|  07:28  |       80808000 |      135000 |  180375 |
+|  07:29  |       81000000 |      192000 |  180400 |
+|  07:30  |       81200000 |      200000 |  180444 |
+|  07:31  |       81400000 |      200000 |  180487 |
+|  07:32  |       81600000 |      200000 |  180530 |
+|  07:33  |       81797000 |      197000 |  180567 |
+|  07:34  |       81939000 |      142000 |  180482 |
+|  07:35  |       82103000 |      164000 |  180446 |
+|  07:36  |       82300000 |      197000 |  180482 |
+|  07:37  |       82500000 |      200000 |  180525 |
+|  07:38  |       82700000 |      200000 |  180567 |
+|  07:39  |       82898000 |      198000 |  180605 |
+|  07:40  |       83076000 |      178000 |  180600 |
+|  07:41  |       83206000 |      130000 |  180490 |
+|  07:42  |       83400000 |      194000 |  180519 |
+|  07:43  |       83600000 |      200000 |  180561 |
+|  07:44  |       83800000 |      200000 |  180603 |
+|  07:45  |       83982000 |      182000 |  180606 |
+|  07:46  |       84139000 |      157000 |  180555 |
+|  07:47  |       84305000 |      166000 |  180524 |
+|  07:48  |       84500000 |      195000 |  180555 |
+|  07:49  |       84700000 |      200000 |  180597 |
+|  07:50  |       84898000 |      198000 |  180634 |
+|  07:51  |       85075000 |      177000 |  180626 |
+|  07:52  |       85217000 |      142000 |  180544 |
+|  07:53  |       85402000 |      185000 |  180553 |
+|  07:54  |       85600000 |      198000 |  180590 |
+|  07:55  |       85800000 |      200000 |  180631 |
+|  07:56  |       86000000 |      200000 |  180672 |
+|  07:57  |       86192000 |      192000 |  180696 |
+|  07:58  |       86363000 |      171000 |  180675 |
+|  07:59  |       86507000 |      144000 |  180599 |
+|  08:00  |       86700000 |      193000 |  180625 |
+|  08:01  |       86900000 |      200000 |  180665 |
+|  08:02  |       87100000 |      200000 |  180705 |
+|  08:03  |       87288000 |      188000 |  180720 |
+|  08:04  |       87435000 |      147000 |  180650 |
+|  08:05  |       87601000 |      166000 |  180620 |
+|  08:06  |       87800000 |      199000 |  180658 |
+|  08:07  |       88000000 |      200000 |  180698 |
+|  08:08  |       88200000 |      200000 |  180737 |
+|  08:09  |       88382000 |      182000 |  180740 |
+|  08:10  |       88524000 |      142000 |  180661 |
+|  08:11  |       88700000 |      176000 |  180651 |
+|  08:12  |       88900000 |      200000 |  180691 |
+|  08:13  |       89100000 |      200000 |  180730 |
+|  08:14  |       89295000 |      195000 |  180759 |
+|  08:15  |       89464000 |      169000 |  180735 |
+|  08:16  |       89610000 |      146000 |  180665 |
+|  08:17  |       89800000 |      190000 |  180684 |
+|  08:18  |       90000000 |      200000 |  180722 |
+|  08:19  |       90200000 |      200000 |  180761 |
+|  08:20  |       90395000 |      195000 |  180790 |
+|  08:21  |       90571000 |      176000 |  180780 |
+|  08:22  |       90718000 |      147000 |  180713 |
+|  08:23  |       90900000 |      182000 |  180715 |
+|  08:24  |       91100000 |      200000 |  180753 |
+|  08:25  |       91300000 |      200000 |  180792 |
+|  08:26  |       91494000 |      194000 |  180818 |
+|  08:27  |       91674000 |      180000 |  180816 |
+|  08:28  |       91809000 |      135000 |  180726 |
+|  08:29  |       92000000 |      191000 |  180746 |
+|  08:30  |       92200000 |      200000 |  180784 |
+|  08:31  |       92400000 |      200000 |  180821 |
+|  08:32  |       92588000 |      188000 |  180835 |
+|  08:33  |       92740000 |      152000 |  180779 |
+|  08:34  |       92901000 |      161000 |  180741 |
+|  08:35  |       93100000 |      199000 |  180776 |
+|  08:36  |       93300000 |      200000 |  180813 |
+|  08:37  |       93499000 |      199000 |  180849 |
+|  08:38  |       93668000 |      169000 |  180826 |
+|  08:39  |       93806000 |      138000 |  180743 |
+|  08:40  |       94000000 |      194000 |  180769 |
+|  08:41  |       94200000 |      200000 |  180806 |
+|  08:42  |       94400000 |      200000 |  180842 |
+|  08:43  |       94587000 |      187000 |  180854 |
+|  08:44  |       94757000 |      170000 |  180833 |
+|  08:45  |       94902000 |      145000 |  180765 |
+|  08:46  |       95100000 |      198000 |  180798 |
+|  08:47  |       95300000 |      200000 |  180834 |
+|  08:48  |       95498000 |      198000 |  180867 |
+|  08:49  |       95671000 |      173000 |  180852 |
+|  08:50  |       95815000 |      144000 |  180783 |
+|  08:51  |       96001000 |      186000 |  180792 |
+|  08:52  |       96200000 |      199000 |  180827 |
+|  08:53  |       96400000 |      200000 |  180863 |
+|  08:54  |       96598000 |      198000 |  180895 |
+|  08:55  |       96774000 |      176000 |  180885 |
+|  08:56  |       96916000 |      142000 |  180813 |
+|  08:57  |       97100000 |      184000 |  180819 |
+|  08:58  |       97300000 |      200000 |  180855 |
+|  08:59  |       97500000 |      200000 |  180890 |
+|  09:00  |       97690000 |      190000 |  180907 |
+|  09:01  |       97823000 |      133000 |  180818 |
+|  09:02  |       98001000 |      178000 |  180813 |
+|  09:03  |       98200000 |      199000 |  180847 |
+|  09:04  |       98400000 |      200000 |  180882 |
+|  09:05  |       98595000 |      195000 |  180908 |
+|  09:06  |       98765000 |      170000 |  180888 |
+|  09:07  |       98901000 |      136000 |  180806 |
+|  09:08  |       99100000 |      199000 |  180839 |
+|  09:09  |       99300000 |      200000 |  180874 |
+|  09:10  |       99499000 |      199000 |  180907 |
+|  09:11  |       99685000 |      186000 |  180916 |
+|  09:12  |       99818000 |      133000 |  180829 |
+|  09:13  |      100000000 |      182000 |  180831 |
+|  09:14  |      100200000 |      200000 |  180866 |
+|  09:15  |      100398000 |      198000 |  180897 |
+|  09:16  |      100581000 |      183000 |  180901 |
+|  09:17  |      100715000 |      134000 |  180816 |
+|  09:18  |      100901000 |      186000 |  180826 |
+|  09:19  |      101100000 |      199000 |  180858 |
+|  09:20  |      101300000 |      200000 |  180892 |
+|  09:21  |      101486000 |      186000 |  180901 |
+|  09:22  |      101627000 |      141000 |  180830 |
+|  09:23  |      101801000 |      174000 |  180818 |
+|  09:24  |      102000000 |      199000 |  180851 |
+|  09:25  |      102200000 |      200000 |  180884 |
+|  09:26  |      102391000 |      191000 |  180902 |
+|  09:27  |      102561000 |      170000 |  180883 |
+|  09:28  |      102711000 |      150000 |  180829 |
+|  09:29  |      102900000 |      189000 |  180843 |
+|  09:30  |      103100000 |      200000 |  180877 |
+|  09:31  |      103300000 |      200000 |  180910 |
+|  09:32  |      103487000 |      187000 |  180921 |
+|  09:33  |      103653000 |      166000 |  180895 |
+|  09:34  |      103811000 |      158000 |  180855 |
+|  09:35  |      104000000 |      189000 |  180869 |
+|  09:36  |      104200000 |      200000 |  180902 |
+|  09:37  |      104400000 |      200000 |  180935 |
+|  09:38  |      104593000 |      193000 |  180956 |
+|  09:39  |      104750000 |      157000 |  180915 |
+|  09:40  |      104906000 |      156000 |  180872 |
+|  09:41  |      105100000 |      194000 |  180895 |
+|  09:42  |      105300000 |      200000 |  180927 |
+|  09:43  |      105500000 |      200000 |  180960 |
+|  09:44  |      105692000 |      192000 |  180979 |
+|  09:45  |      105833000 |      141000 |  180911 |
+|  09:46  |      106000000 |      167000 |  180887 |
+|  09:47  |      106200000 |      200000 |  180919 |
+|  09:48  |      106400000 |      200000 |  180952 |
+|  09:49  |      106596000 |      196000 |  180977 |
+|  09:50  |      106777000 |      181000 |  180977 |
+|  09:51  |      106936000 |      159000 |  180940 |
+|  09:52  |      107103000 |      167000 |  180917 |
+|  09:53  |      107300000 |      197000 |  180944 |
+|  09:54  |      107500000 |      200000 |  180976 |
+|  09:55  |      107700000 |      200000 |  181008 |
+|  09:56  |      107881000 |      181000 |  181008 |
+|  09:57  |      108006000 |      125000 |  180914 |
+|  09:58  |      108200000 |      194000 |  180936 |
+|  09:59  |      108400000 |      200000 |  180968 |
+|  10:00  |      108598000 |      198000 |  180996 |
 ------------------------------------------------------------
                           RESULTS
 ------------------------------------------------------------
-Total Requests: 99600000
+Total Requests: 108598000
 Failures:       0
 ============================================================
 
 
-Stopping server (PID 440979)...
+Stopping server (PID 721919)...
 Stopped
 
 [NETWORK] bench_endurance (persistent)...
 Starting server on port 8080 (persistent=true)...
-Started (PID 441506)
+Started (PID 724982)
 
 ============================================================
          TEST: ENDURANCE TELEMETRY (10 MIN)                 
@@ -1523,613 +1385,613 @@ Threads:      100
 
 |  00:01  |         100000 |      100000 |  100000 |
 |  00:02  |         300000 |      200000 |  150000 |
-|  00:03  |         400000 |      100000 |  133333 |
-|  00:04  |         600000 |      200000 |  150000 |
-|  00:05  |         700000 |      100000 |  140000 |
-|  00:06  |         900000 |      200000 |  150000 |
-|  00:07  |        1100000 |      200000 |  157142 |
-|  00:08  |        1200000 |      100000 |  150000 |
-|  00:09  |        1400000 |      200000 |  155555 |
-|  00:10  |        1500000 |      100000 |  150000 |
-|  00:11  |        1700000 |      200000 |  154545 |
-|  00:12  |        1801000 |      101000 |  150083 |
-|  00:13  |        2000000 |      199000 |  153846 |
-|  00:14  |        2200000 |      200000 |  157142 |
-|  00:15  |        2300000 |      100000 |  153333 |
-|  00:16  |        2500000 |      200000 |  156250 |
-|  00:17  |        2600000 |      100000 |  152941 |
-|  00:18  |        2800000 |      200000 |  155555 |
-|  00:19  |        3000000 |      200000 |  157894 |
-|  00:20  |        3100000 |      100000 |  155000 |
-|  00:21  |        3300000 |      200000 |  157142 |
-|  00:22  |        3400000 |      100000 |  154545 |
-|  00:23  |        3600000 |      200000 |  156521 |
-|  00:24  |        3800000 |      200000 |  158333 |
-|  00:25  |        3900000 |      100000 |  156000 |
-|  00:26  |        4100000 |      200000 |  157692 |
-|  00:27  |        4237000 |      137000 |  156925 |
-|  00:28  |        4400000 |      163000 |  157142 |
-|  00:29  |        4600000 |      200000 |  158620 |
-|  00:30  |        4700000 |      100000 |  156666 |
-|  00:31  |        4900000 |      200000 |  158064 |
-|  00:32  |        5100000 |      200000 |  159375 |
-|  00:33  |        5200000 |      100000 |  157575 |
-|  00:34  |        5400000 |      200000 |  158823 |
-|  00:35  |        5500000 |      100000 |  157142 |
-|  00:36  |        5700000 |      200000 |  158333 |
-|  00:37  |        5800000 |      100000 |  156756 |
-|  00:38  |        6000000 |      200000 |  157894 |
-|  00:39  |        6200000 |      200000 |  158974 |
-|  00:40  |        6300000 |      100000 |  157500 |
-|  00:41  |        6500000 |      200000 |  158536 |
-|  00:42  |        6600000 |      100000 |  157142 |
-|  00:43  |        6800000 |      200000 |  158139 |
-|  00:44  |        7000000 |      200000 |  159090 |
-|  00:45  |        7100000 |      100000 |  157777 |
-|  00:46  |        7300000 |      200000 |  158695 |
-|  00:47  |        7400000 |      100000 |  157446 |
-|  00:48  |        7600000 |      200000 |  158333 |
-|  00:49  |        7800000 |      200000 |  159183 |
-|  00:50  |        7900000 |      100000 |  158000 |
-|  00:51  |        8100000 |      200000 |  158823 |
-|  00:52  |        8200000 |      100000 |  157692 |
-|  00:53  |        8400000 |      200000 |  158490 |
-|  00:54  |        8500000 |      100000 |  157407 |
-|  00:55  |        8700000 |      200000 |  158181 |
-|  00:56  |        8900000 |      200000 |  158928 |
-|  00:57  |        9000000 |      100000 |  157894 |
-|  00:58  |        9200000 |      200000 |  158620 |
-|  00:59  |        9302000 |      102000 |  157661 |
-|  01:00  |        9500000 |      198000 |  158333 |
-|  01:01  |        9700000 |      200000 |  159016 |
-|  01:02  |        9800000 |      100000 |  158064 |
-|  01:03  |       10000000 |      200000 |  158730 |
-|  01:04  |       10100000 |      100000 |  157812 |
-|  01:05  |       10300000 |      200000 |  158461 |
-|  01:06  |       10500000 |      200000 |  159090 |
-|  01:07  |       10600000 |      100000 |  158208 |
-|  01:08  |       10800000 |      200000 |  158823 |
-|  01:09  |       10900000 |      100000 |  157971 |
-|  01:10  |       11100000 |      200000 |  158571 |
-|  01:11  |       11246000 |      146000 |  158394 |
-|  01:12  |       11400000 |      154000 |  158333 |
-|  01:13  |       11600000 |      200000 |  158904 |
-|  01:14  |       11700000 |      100000 |  158108 |
-|  01:15  |       11900000 |      200000 |  158666 |
-|  01:16  |       12100000 |      200000 |  159210 |
-|  01:17  |       12200000 |      100000 |  158441 |
-|  01:18  |       12400000 |      200000 |  158974 |
-|  01:19  |       12500000 |      100000 |  158227 |
-|  01:20  |       12700000 |      200000 |  158750 |
-|  01:21  |       12800000 |      100000 |  158024 |
-|  01:22  |       13000000 |      200000 |  158536 |
-|  01:23  |       13200000 |      200000 |  159036 |
-|  01:24  |       13300000 |      100000 |  158333 |
-|  01:25  |       13500000 |      200000 |  158823 |
-|  01:26  |       13700000 |      200000 |  159302 |
-|  01:27  |       13900000 |      200000 |  159770 |
-|  01:28  |       14000000 |      100000 |  159090 |
-|  01:29  |       14200000 |      200000 |  159550 |
-|  01:30  |       14400000 |      200000 |  160000 |
-|  01:31  |       14500000 |      100000 |  159340 |
-|  01:32  |       14700000 |      200000 |  159782 |
-|  01:33  |       14900000 |      200000 |  160215 |
-|  01:34  |       15100000 |      200000 |  160638 |
-|  01:35  |       15200000 |      100000 |  160000 |
-|  01:36  |       15400000 |      200000 |  160416 |
-|  01:37  |       15600000 |      200000 |  160824 |
-|  01:38  |       15800000 |      200000 |  161224 |
-|  01:39  |       15900000 |      100000 |  160606 |
-|  01:40  |       16100000 |      200000 |  161000 |
-|  01:41  |       16300000 |      200000 |  161386 |
-|  01:42  |       16500000 |      200000 |  161764 |
-|  01:43  |       16600000 |      100000 |  161165 |
-|  01:44  |       16800000 |      200000 |  161538 |
-|  01:45  |       17000000 |      200000 |  161904 |
-|  01:46  |       17200000 |      200000 |  162264 |
-|  01:47  |       17385000 |      185000 |  162476 |
-|  01:48  |       17500000 |      115000 |  162037 |
-|  01:49  |       17700000 |      200000 |  162385 |
-|  01:50  |       17900000 |      200000 |  162727 |
-|  01:51  |       18100000 |      200000 |  163063 |
-|  01:52  |       18200000 |      100000 |  162500 |
-|  01:53  |       18400000 |      200000 |  162831 |
-|  01:54  |       18600000 |      200000 |  163157 |
-|  01:55  |       18800000 |      200000 |  163478 |
-|  01:56  |       18900000 |      100000 |  162931 |
-|  01:57  |       19100000 |      200000 |  163247 |
-|  01:58  |       19300000 |      200000 |  163559 |
-|  01:59  |       19500000 |      200000 |  163865 |
-|  02:00  |       19600000 |      100000 |  163333 |
-|  02:01  |       19800000 |      200000 |  163636 |
-|  02:02  |       20000000 |      200000 |  163934 |
-|  02:03  |       20100000 |      100000 |  163414 |
-|  02:04  |       20300000 |      200000 |  163709 |
-|  02:05  |       20500000 |      200000 |  164000 |
-|  02:06  |       20700000 |      200000 |  164285 |
-|  02:07  |       20800000 |      100000 |  163779 |
-|  02:08  |       21000000 |      200000 |  164062 |
-|  02:09  |       21200000 |      200000 |  164341 |
-|  02:10  |       21364000 |      164000 |  164338 |
-|  02:11  |       21500000 |      136000 |  164122 |
-|  02:12  |       21700000 |      200000 |  164393 |
-|  02:13  |       21900000 |      200000 |  164661 |
-|  02:14  |       22098000 |      198000 |  164910 |
-|  02:15  |       22200000 |      102000 |  164444 |
-|  02:16  |       22400000 |      200000 |  164705 |
-|  02:17  |       22600000 |      200000 |  164963 |
-|  02:18  |       22776000 |      176000 |  165043 |
-|  02:19  |       22900000 |      124000 |  164748 |
-|  02:20  |       23100000 |      200000 |  165000 |
-|  02:21  |       23300000 |      200000 |  165248 |
-|  02:22  |       23402000 |      102000 |  164802 |
-|  02:23  |       23600000 |      198000 |  165034 |
-|  02:24  |       23800000 |      200000 |  165277 |
-|  02:25  |       24000000 |      200000 |  165517 |
-|  02:26  |       24100000 |      100000 |  165068 |
-|  02:27  |       24300000 |      200000 |  165306 |
-|  02:28  |       24500000 |      200000 |  165540 |
-|  02:29  |       24698000 |      198000 |  165758 |
-|  02:30  |       24800000 |      102000 |  165333 |
-|  02:31  |       25000000 |      200000 |  165562 |
-|  02:32  |       25200000 |      200000 |  165789 |
-|  02:33  |       25385000 |      185000 |  165915 |
-|  02:34  |       25500000 |      115000 |  165584 |
-|  02:35  |       25700000 |      200000 |  165806 |
-|  02:36  |       25900000 |      200000 |  166025 |
-|  02:37  |       26000000 |      100000 |  165605 |
-|  02:38  |       26200000 |      200000 |  165822 |
-|  02:39  |       26400000 |      200000 |  166037 |
-|  02:40  |       26595000 |      195000 |  166218 |
-|  02:41  |       26700000 |      105000 |  165838 |
-|  02:42  |       26900000 |      200000 |  166049 |
-|  02:43  |       27100000 |      200000 |  166257 |
-|  02:44  |       27299000 |      199000 |  166457 |
-|  02:45  |       27400000 |      101000 |  166060 |
-|  02:46  |       27600000 |      200000 |  166265 |
-|  02:47  |       27800000 |      200000 |  166467 |
-|  02:48  |       27987000 |      187000 |  166589 |
-|  02:49  |       28100000 |      113000 |  166272 |
-|  02:50  |       28300000 |      200000 |  166470 |
-|  02:51  |       28500000 |      200000 |  166666 |
-|  02:52  |       28700000 |      200000 |  166860 |
-|  02:53  |       28864000 |      164000 |  166843 |
-|  02:54  |       29000000 |      136000 |  166666 |
-|  02:55  |       29200000 |      200000 |  166857 |
-|  02:56  |       29300000 |      100000 |  166477 |
-|  02:57  |       29500000 |      200000 |  166666 |
-|  02:58  |       29700000 |      200000 |  166853 |
-|  02:59  |       29870000 |      170000 |  166871 |
-|  03:00  |       30000000 |      130000 |  166666 |
-|  03:01  |       30200000 |      200000 |  166850 |
-|  03:02  |       30400000 |      200000 |  167032 |
-|  03:03  |       30580000 |      180000 |  167103 |
-|  03:04  |       30700000 |      120000 |  166847 |
-|  03:05  |       30900000 |      200000 |  167027 |
-|  03:06  |       31100000 |      200000 |  167204 |
-|  03:07  |       31300000 |      200000 |  167379 |
-|  03:08  |       31466000 |      166000 |  167372 |
-|  03:09  |       31600000 |      134000 |  167195 |
-|  03:10  |       31800000 |      200000 |  167368 |
-|  03:11  |       32000000 |      200000 |  167539 |
-|  03:12  |       32197000 |      197000 |  167692 |
-|  03:13  |       32303000 |      106000 |  167373 |
-|  03:14  |       32500000 |      197000 |  167525 |
-|  03:15  |       32700000 |      200000 |  167692 |
-|  03:16  |       32900000 |      200000 |  167857 |
-|  03:17  |       33056000 |      156000 |  167796 |
-|  03:18  |       33200000 |      144000 |  167676 |
-|  03:19  |       33400000 |      200000 |  167839 |
-|  03:20  |       33600000 |      200000 |  168000 |
-|  03:21  |       33800000 |      200000 |  168159 |
-|  03:22  |       33964000 |      164000 |  168138 |
-|  03:23  |       34100000 |      136000 |  167980 |
-|  03:24  |       34300000 |      200000 |  168137 |
-|  03:25  |       34500000 |      200000 |  168292 |
-|  03:26  |       34600000 |      100000 |  167961 |
-|  03:27  |       34800000 |      200000 |  168115 |
-|  03:28  |       35000000 |      200000 |  168269 |
-|  03:29  |       35160000 |      160000 |  168229 |
-|  03:30  |       35300000 |      140000 |  168095 |
-|  03:31  |       35500000 |      200000 |  168246 |
-|  03:32  |       35700000 |      200000 |  168396 |
-|  03:33  |       35826000 |      126000 |  168197 |
-|  03:34  |       36000000 |      174000 |  168224 |
-|  03:35  |       36200000 |      200000 |  168372 |
-|  03:36  |       36400000 |      200000 |  168518 |
-|  03:37  |       36510000 |      110000 |  168248 |
-|  03:38  |       36700000 |      190000 |  168348 |
-|  03:39  |       36900000 |      200000 |  168493 |
-|  03:40  |       37100000 |      200000 |  168636 |
-|  03:41  |       37209000 |      109000 |  168366 |
-|  03:42  |       37400000 |      191000 |  168468 |
-|  03:43  |       37600000 |      200000 |  168609 |
-|  03:44  |       37799000 |      199000 |  168745 |
-|  03:45  |       37902000 |      103000 |  168453 |
-|  03:46  |       38100000 |      198000 |  168584 |
-|  03:47  |       38300000 |      200000 |  168722 |
-|  03:48  |       38500000 |      200000 |  168859 |
-|  03:49  |       38600000 |      100000 |  168558 |
-|  03:50  |       38800000 |      200000 |  168695 |
-|  03:51  |       39000000 |      200000 |  168831 |
-|  03:52  |       39172000 |      172000 |  168844 |
-|  03:53  |       39300000 |      128000 |  168669 |
-|  03:54  |       39500000 |      200000 |  168803 |
-|  03:55  |       39700000 |      200000 |  168936 |
-|  03:56  |       39869000 |      169000 |  168936 |
-|  03:57  |       40000000 |      131000 |  168776 |
-|  03:58  |       40200000 |      200000 |  168907 |
-|  03:59  |       40400000 |      200000 |  169037 |
-|  04:00  |       40598000 |      198000 |  169158 |
-|  04:01  |       40700000 |      102000 |  168879 |
-|  04:02  |       40900000 |      200000 |  169008 |
-|  04:03  |       41096000 |      196000 |  169119 |
-|  04:04  |       41200000 |      104000 |  168852 |
-|  04:05  |       41400000 |      200000 |  168979 |
-|  04:06  |       41600000 |      200000 |  169105 |
-|  04:07  |       41747000 |      147000 |  169016 |
-|  04:08  |       41900000 |      153000 |  168951 |
-|  04:09  |       42100000 |      200000 |  169076 |
-|  04:10  |       42300000 |      200000 |  169200 |
-|  04:11  |       42413000 |      113000 |  168976 |
-|  04:12  |       42600000 |      187000 |  169047 |
-|  04:13  |       42800000 |      200000 |  169169 |
-|  04:14  |       42998000 |      198000 |  169283 |
-|  04:15  |       43102000 |      104000 |  169027 |
-|  04:16  |       43300000 |      198000 |  169140 |
-|  04:17  |       43500000 |      200000 |  169260 |
-|  04:18  |       43699000 |      199000 |  169375 |
-|  04:19  |       43800000 |      101000 |  169111 |
-|  04:20  |       43993000 |      193000 |  169203 |
-|  04:21  |       44100000 |      107000 |  168965 |
-|  04:22  |       44300000 |      200000 |  169083 |
-|  04:23  |       44400000 |      100000 |  168821 |
-|  04:24  |       44600000 |      200000 |  168939 |
-|  04:25  |       44727000 |      127000 |  168781 |
-|  04:26  |       44900000 |      173000 |  168796 |
-|  04:27  |       45099000 |      199000 |  168910 |
-|  04:28  |       45200000 |      101000 |  168656 |
-|  04:29  |       45400000 |      200000 |  168773 |
-|  04:30  |       45500000 |      100000 |  168518 |
-|  04:31  |       45700000 |      200000 |  168634 |
-|  04:32  |       45855000 |      155000 |  168584 |
-|  04:33  |       46000000 |      145000 |  168498 |
-|  04:34  |       46199000 |      199000 |  168609 |
-|  04:35  |       46300000 |      101000 |  168363 |
-|  04:36  |       46500000 |      200000 |  168478 |
-|  04:37  |       46602000 |      102000 |  168238 |
-|  04:38  |       46800000 |      198000 |  168345 |
-|  04:39  |       46937000 |      137000 |  168232 |
-|  04:40  |       47100000 |      163000 |  168214 |
-|  04:41  |       47299000 |      199000 |  168323 |
-|  04:42  |       47400000 |      101000 |  168085 |
-|  04:43  |       47600000 |      200000 |  168197 |
-|  04:44  |       47704000 |      104000 |  167971 |
-|  04:45  |       47900000 |      196000 |  168070 |
-|  04:46  |       48096000 |      196000 |  168167 |
-|  04:47  |       48200000 |      104000 |  167944 |
-|  04:48  |       48400000 |      200000 |  168055 |
-|  04:49  |       48500000 |      100000 |  167820 |
-|  04:50  |       48700000 |      200000 |  167931 |
-|  04:51  |       48850000 |      150000 |  167869 |
-|  04:52  |       49000000 |      150000 |  167808 |
-|  04:53  |       49200000 |      200000 |  167918 |
-|  04:54  |       49300000 |      100000 |  167687 |
-|  04:55  |       49500000 |      200000 |  167796 |
-|  04:56  |       49651000 |      151000 |  167739 |
-|  04:57  |       49800000 |      149000 |  167676 |
-|  04:58  |       50000000 |      200000 |  167785 |
-|  04:59  |       50100000 |      100000 |  167558 |
-|  05:00  |       50300000 |      200000 |  167666 |
-|  05:01  |       50470000 |      170000 |  167674 |
-|  05:02  |       50600000 |      130000 |  167549 |
-|  05:03  |       50800000 |      200000 |  167656 |
-|  05:04  |       50900000 |      100000 |  167434 |
-|  05:05  |       51100000 |      200000 |  167540 |
-|  05:06  |       51252000 |      152000 |  167490 |
-|  05:07  |       51400000 |      148000 |  167426 |
-|  05:08  |       51600000 |      200000 |  167532 |
-|  05:09  |       51700000 |      100000 |  167313 |
-|  05:10  |       51900000 |      200000 |  167419 |
-|  05:11  |       52005000 |      105000 |  167218 |
-|  05:12  |       52200000 |      195000 |  167307 |
-|  05:13  |       52398000 |      198000 |  167405 |
-|  05:14  |       52500000 |      102000 |  167197 |
-|  05:15  |       52700000 |      200000 |  167301 |
-|  05:16  |       52801000 |      101000 |  167091 |
-|  05:17  |       53000000 |      199000 |  167192 |
-|  05:18  |       53190000 |      190000 |  167264 |
-|  05:19  |       53300000 |      110000 |  167084 |
-|  05:20  |       53500000 |      200000 |  167187 |
-|  05:21  |       53600000 |      100000 |  166978 |
-|  05:22  |       53800000 |      200000 |  167080 |
-|  05:23  |       53932000 |      132000 |  166972 |
-|  05:24  |       54100000 |      168000 |  166975 |
-|  05:25  |       54298000 |      198000 |  167070 |
-|  05:26  |       54400000 |      102000 |  166871 |
-|  05:27  |       54600000 |      200000 |  166972 |
-|  05:28  |       54702000 |      102000 |  166774 |
-|  05:29  |       54900000 |      198000 |  166869 |
-|  05:30  |       55086000 |      186000 |  166927 |
-|  05:31  |       55200000 |      114000 |  166767 |
-|  05:32  |       55400000 |      200000 |  166867 |
-|  05:33  |       55500000 |      100000 |  166666 |
-|  05:34  |       55700000 |      200000 |  166766 |
-|  05:35  |       55802000 |      102000 |  166573 |
-|  05:36  |       56000000 |      198000 |  166666 |
-|  05:37  |       56168000 |      168000 |  166670 |
-|  05:38  |       56300000 |      132000 |  166568 |
-|  05:39  |       56452000 |      152000 |  166525 |
-|  05:40  |       56600000 |      148000 |  166470 |
-|  05:41  |       56799000 |      199000 |  166565 |
-|  05:42  |       56900000 |      101000 |  166374 |
-|  05:43  |       57100000 |      200000 |  166472 |
-|  05:44  |       57217000 |      117000 |  166328 |
-|  05:45  |       57400000 |      183000 |  166376 |
-|  05:46  |       57599000 |      199000 |  166471 |
-|  05:47  |       57700000 |      101000 |  166282 |
-|  05:48  |       57900000 |      200000 |  166379 |
-|  05:49  |       58007000 |      107000 |  166209 |
-|  05:50  |       58200000 |      193000 |  166285 |
-|  05:51  |       58399000 |      199000 |  166378 |
-|  05:52  |       58500000 |      101000 |  166193 |
-|  05:53  |       58700000 |      200000 |  166288 |
-|  05:54  |       58805000 |      105000 |  166115 |
-|  05:55  |       59000000 |      195000 |  166197 |
-|  05:56  |       59192000 |      192000 |  166269 |
-|  05:57  |       59300000 |      108000 |  166106 |
-|  05:58  |       59500000 |      200000 |  166201 |
-|  05:59  |       59600000 |      100000 |  166016 |
-|  06:00  |       59700000 |      100000 |  165833 |
-|  06:01  |       59896000 |      196000 |  165916 |
-|  06:02  |       60000000 |      104000 |  165745 |
-|  06:03  |       60200000 |      200000 |  165840 |
-|  06:04  |       60300000 |      100000 |  165659 |
-|  06:05  |       60500000 |      200000 |  165753 |
-|  06:06  |       60660000 |      160000 |  165737 |
-|  06:07  |       60800000 |      140000 |  165667 |
-|  06:08  |       60999000 |      199000 |  165758 |
-|  06:09  |       61100000 |      101000 |  165582 |
-|  06:10  |       61300000 |      200000 |  165675 |
-|  06:11  |       61406000 |      106000 |  165514 |
-|  06:12  |       61600000 |      194000 |  165591 |
-|  06:13  |       61796000 |      196000 |  165672 |
-|  06:14  |       61900000 |      104000 |  165508 |
-|  06:15  |       62100000 |      200000 |  165600 |
-|  06:16  |       62200000 |      100000 |  165425 |
-|  06:17  |       62400000 |      200000 |  165517 |
-|  06:18  |       62557000 |      157000 |  165494 |
-|  06:19  |       62700000 |      143000 |  165435 |
-|  06:20  |       62899000 |      199000 |  165523 |
-|  06:21  |       63000000 |      101000 |  165354 |
-|  06:22  |       63200000 |      200000 |  165445 |
-|  06:23  |       63305000 |      105000 |  165287 |
-|  06:24  |       63500000 |      195000 |  165364 |
-|  06:25  |       63694000 |      194000 |  165438 |
-|  06:26  |       63800000 |      106000 |  165284 |
-|  06:27  |       63999000 |      199000 |  165372 |
-|  06:28  |       64100000 |      101000 |  165206 |
-|  06:29  |       64300000 |      200000 |  165295 |
-|  06:30  |       64423000 |      123000 |  165187 |
-|  06:31  |       64600000 |      177000 |  165217 |
-|  06:32  |       64799000 |      199000 |  165303 |
-|  06:33  |       64900000 |      101000 |  165139 |
-|  06:34  |       65100000 |      200000 |  165228 |
-|  06:35  |       65200000 |      100000 |  165063 |
-|  06:36  |       65400000 |      200000 |  165151 |
-|  06:37  |       65595000 |      195000 |  165226 |
-|  06:38  |       65700000 |      105000 |  165075 |
-|  06:39  |       65899000 |      199000 |  165160 |
-|  06:40  |       66000000 |      101000 |  165000 |
-|  06:41  |       66200000 |      200000 |  165087 |
-|  06:42  |       66303000 |      103000 |  164932 |
-|  06:43  |       66500000 |      197000 |  165012 |
-|  06:44  |       66671000 |      171000 |  165027 |
-|  06:45  |       66800000 |      129000 |  164938 |
-|  06:46  |       67000000 |      200000 |  165024 |
-|  06:47  |       67100000 |      100000 |  164864 |
-|  06:48  |       67300000 |      200000 |  164950 |
-|  06:49  |       67466000 |      166000 |  164953 |
-|  06:50  |       67600000 |      134000 |  164878 |
-|  06:51  |       67800000 |      200000 |  164963 |
-|  06:52  |       67900000 |      100000 |  164805 |
-|  06:53  |       68100000 |      200000 |  164891 |
-|  06:54  |       68232000 |      132000 |  164811 |
-|  06:55  |       68400000 |      168000 |  164819 |
-|  06:56  |       68599000 |      199000 |  164901 |
-|  06:57  |       68700000 |      101000 |  164748 |
-|  06:58  |       68900000 |      200000 |  164832 |
-|  06:59  |       69047000 |      147000 |  164789 |
-|  07:00  |       69200000 |      153000 |  164761 |
-|  07:01  |       69396000 |      196000 |  164836 |
-|  07:02  |       69500000 |      104000 |  164691 |
-|  07:03  |       69700000 |      200000 |  164775 |
-|  07:04  |       69800000 |      100000 |  164622 |
-|  07:05  |       70000000 |      200000 |  164705 |
-|  07:06  |       70189000 |      189000 |  164762 |
-|  07:07  |       70300000 |      111000 |  164637 |
-|  07:08  |       70500000 |      200000 |  164719 |
-|  07:09  |       70602000 |      102000 |  164573 |
-|  07:10  |       70800000 |      198000 |  164651 |
-|  07:11  |       70973000 |      173000 |  164670 |
-|  07:12  |       71100000 |      127000 |  164583 |
-|  07:13  |       71300000 |      200000 |  164665 |
-|  07:14  |       71400000 |      100000 |  164516 |
-|  07:15  |       71600000 |      200000 |  164597 |
-|  07:16  |       71751000 |      151000 |  164566 |
-|  07:17  |       71900000 |      149000 |  164530 |
-|  07:18  |       72099000 |      199000 |  164609 |
-|  07:19  |       72200000 |      101000 |  164464 |
-|  07:20  |       72400000 |      200000 |  164545 |
-|  07:21  |       72562000 |      162000 |  164539 |
-|  07:22  |       72700000 |      138000 |  164479 |
-|  07:23  |       72899000 |      199000 |  164557 |
-|  07:24  |       73000000 |      101000 |  164414 |
-|  07:25  |       73200000 |      200000 |  164494 |
-|  07:26  |       73301000 |      101000 |  164352 |
-|  07:27  |       73500000 |      199000 |  164429 |
-|  07:28  |       73696000 |      196000 |  164500 |
-|  07:29  |       73800000 |      104000 |  164365 |
-|  07:30  |       74000000 |      200000 |  164444 |
-|  07:31  |       74104000 |      104000 |  164310 |
-|  07:32  |       74300000 |      196000 |  164380 |
-|  07:33  |       74497000 |      197000 |  164452 |
-|  07:34  |       74600000 |      103000 |  164317 |
-|  07:35  |       74800000 |      200000 |  164395 |
-|  07:36  |       74902000 |      102000 |  164258 |
-|  07:37  |       75100000 |      198000 |  164332 |
-|  07:38  |       75279000 |      179000 |  164364 |
-|  07:39  |       75400000 |      121000 |  164270 |
-|  07:40  |       75600000 |      200000 |  164347 |
-|  07:41  |       75700000 |      100000 |  164208 |
-|  07:42  |       75900000 |      200000 |  164285 |
-|  07:43  |       76027000 |      127000 |  164205 |
-|  07:44  |       76200000 |      173000 |  164224 |
-|  07:45  |       76399000 |      199000 |  164298 |
-|  07:46  |       76500000 |      101000 |  164163 |
-|  07:47  |       76700000 |      200000 |  164239 |
-|  07:48  |       76800000 |      100000 |  164102 |
-|  07:49  |       77000000 |      200000 |  164179 |
-|  07:50  |       77196000 |      196000 |  164246 |
-|  07:51  |       77300000 |      104000 |  164118 |
-|  07:52  |       77500000 |      200000 |  164194 |
-|  07:53  |       77602000 |      102000 |  164063 |
-|  07:54  |       77800000 |      198000 |  164135 |
-|  07:55  |       77992000 |      192000 |  164193 |
-|  07:56  |       78100000 |      108000 |  164075 |
-|  07:57  |       78300000 |      200000 |  164150 |
-|  07:58  |       78400000 |      100000 |  164016 |
-|  07:59  |       78600000 |      200000 |  164091 |
-|  08:00  |       78737000 |      137000 |  164035 |
-|  08:01  |       78900000 |      163000 |  164033 |
-|  08:02  |       79099000 |      199000 |  164105 |
-|  08:03  |       79200000 |      101000 |  163975 |
-|  08:04  |       79400000 |      200000 |  164049 |
-|  08:05  |       79502000 |      102000 |  163921 |
-|  08:06  |       79700000 |      198000 |  163991 |
-|  08:07  |       79896000 |      196000 |  164057 |
-|  08:08  |       80000000 |      104000 |  163934 |
-|  08:09  |       80200000 |      200000 |  164008 |
-|  08:10  |       80300000 |      100000 |  163877 |
-|  08:11  |       80500000 |      200000 |  163951 |
-|  08:12  |       80692000 |      192000 |  164008 |
-|  08:13  |       80800000 |      108000 |  163894 |
-|  08:14  |       81000000 |      200000 |  163967 |
-|  08:15  |       81100000 |      100000 |  163838 |
-|  08:16  |       81300000 |      200000 |  163911 |
-|  08:17  |       81453000 |      153000 |  163889 |
-|  08:18  |       81600000 |      147000 |  163855 |
-|  08:19  |       81799000 |      199000 |  163925 |
-|  08:20  |       81900000 |      101000 |  163800 |
-|  08:21  |       82100000 |      200000 |  163872 |
-|  08:22  |       82221000 |      121000 |  163786 |
-|  08:23  |       82400000 |      179000 |  163817 |
-|  08:24  |       82599000 |      199000 |  163886 |
-|  08:25  |       82700000 |      101000 |  163762 |
-|  08:26  |       82900000 |      200000 |  163833 |
-|  08:27  |       83024000 |      124000 |  163755 |
-|  08:28  |       83200000 |      176000 |  163779 |
-|  08:29  |       83399000 |      199000 |  163848 |
-|  08:30  |       83500000 |      101000 |  163725 |
-|  08:31  |       83700000 |      200000 |  163796 |
-|  08:32  |       83801000 |      101000 |  163673 |
-|  08:33  |       84000000 |      199000 |  163742 |
-|  08:34  |       84192000 |      192000 |  163797 |
-|  08:35  |       84300000 |      108000 |  163689 |
-|  08:36  |       84500000 |      200000 |  163759 |
-|  08:37  |       84600000 |      100000 |  163636 |
-|  08:38  |       84800000 |      200000 |  163706 |
-|  08:39  |       84900000 |      100000 |  163583 |
-|  08:40  |       85100000 |      200000 |  163653 |
-|  08:41  |       85223000 |      123000 |  163575 |
-|  08:42  |       85400000 |      177000 |  163601 |
-|  08:43  |       85595000 |      195000 |  163661 |
-|  08:44  |       85700000 |      105000 |  163549 |
-|  08:45  |       85900000 |      200000 |  163619 |
-|  08:46  |       86000000 |      100000 |  163498 |
-|  08:47  |       86200000 |      200000 |  163567 |
-|  08:48  |       86358000 |      158000 |  163556 |
-|  08:49  |       86500000 |      142000 |  163516 |
-|  08:50  |       86699000 |      199000 |  163583 |
-|  08:51  |       86800000 |      101000 |  163465 |
-|  08:52  |       87000000 |      200000 |  163533 |
-|  08:53  |       87100000 |      100000 |  163414 |
-|  08:54  |       87300000 |      200000 |  163483 |
-|  08:55  |       87452000 |      152000 |  163461 |
-|  08:56  |       87600000 |      148000 |  163432 |
-|  08:57  |       87799000 |      199000 |  163499 |
-|  08:58  |       87900000 |      101000 |  163382 |
-|  08:59  |       88100000 |      200000 |  163450 |
-|  09:00  |       88202000 |      102000 |  163337 |
-|  09:01  |       88400000 |      198000 |  163401 |
-|  09:02  |       88592000 |      192000 |  163453 |
-|  09:03  |       88700000 |      108000 |  163351 |
-|  09:04  |       88900000 |      200000 |  163419 |
-|  09:05  |       89000000 |      100000 |  163302 |
-|  09:06  |       89200000 |      200000 |  163369 |
-|  09:07  |       89321000 |      121000 |  163292 |
-|  09:08  |       89500000 |      179000 |  163321 |
-|  09:09  |       89699000 |      199000 |  163386 |
-|  09:10  |       89800000 |      101000 |  163272 |
-|  09:11  |       90000000 |      200000 |  163339 |
-|  09:12  |       90128000 |      128000 |  163275 |
-|  09:13  |       90300000 |      172000 |  163291 |
-|  09:14  |       90499000 |      199000 |  163355 |
-|  09:15  |       90600000 |      101000 |  163243 |
-|  09:16  |       90800000 |      200000 |  163309 |
-|  09:17  |       90908000 |      108000 |  163210 |
-|  09:18  |       91100000 |      192000 |  163261 |
-|  09:19  |       91298000 |      198000 |  163323 |
-|  09:20  |       91400000 |      102000 |  163214 |
-|  09:21  |       91600000 |      200000 |  163279 |
-|  09:22  |       91708000 |      108000 |  163181 |
-|  09:23  |       91900000 |      192000 |  163232 |
-|  09:24  |       92099000 |      199000 |  163296 |
-|  09:25  |       92200000 |      101000 |  163185 |
-|  09:26  |       92400000 |      200000 |  163250 |
-|  09:27  |       92515000 |      115000 |  163165 |
-|  09:28  |       92700000 |      185000 |  163204 |
-|  09:29  |       92894000 |      194000 |  163258 |
-|  09:30  |       93000000 |      106000 |  163157 |
-|  09:31  |       93200000 |      200000 |  163222 |
-|  09:32  |       93300000 |      100000 |  163111 |
-|  09:33  |       93500000 |      200000 |  163176 |
-|  09:34  |       93670000 |      170000 |  163188 |
-|  09:35  |       93800000 |      130000 |  163130 |
-|  09:36  |       94000000 |      200000 |  163194 |
-|  09:37  |       94100000 |      100000 |  163084 |
-|  09:38  |       94300000 |      200000 |  163148 |
-|  09:39  |       94416000 |      116000 |  163067 |
-|  09:40  |       94600000 |      184000 |  163103 |
-|  09:41  |       94799000 |      199000 |  163165 |
-|  09:42  |       94900000 |      101000 |  163058 |
-|  09:43  |       95100000 |      200000 |  163121 |
-|  09:44  |       95204000 |      104000 |  163020 |
-|  09:45  |       95400000 |      196000 |  163076 |
-|  09:46  |       95596000 |      196000 |  163133 |
-|  09:47  |       95700000 |      104000 |  163032 |
-|  09:48  |       95900000 |      200000 |  163095 |
-|  09:49  |       96001000 |      101000 |  162989 |
-|  09:50  |       96200000 |      199000 |  163050 |
-|  09:51  |       96383000 |      183000 |  163084 |
-|  09:52  |       96500000 |      117000 |  163006 |
-|  09:53  |       96700000 |      200000 |  163069 |
-|  09:54  |       96800000 |      100000 |  162962 |
-|  09:55  |       97000000 |      200000 |  163025 |
-|  09:56  |       97108000 |      108000 |  162932 |
-|  09:57  |       97300000 |      192000 |  162981 |
-|  09:58  |       97499000 |      199000 |  163041 |
-|  09:59  |       97600000 |      101000 |  162938 |
-|  10:00  |       97800000 |      200000 |  163000 |
+|  00:03  |         500000 |      200000 |  166666 |
+|  00:04  |         600000 |      100000 |  150000 |
+|  00:05  |         800000 |      200000 |  160000 |
+|  00:06  |        1000000 |      200000 |  166666 |
+|  00:07  |        1200000 |      200000 |  171428 |
+|  00:08  |        1300000 |      100000 |  162500 |
+|  00:09  |        1500000 |      200000 |  166666 |
+|  00:10  |        1700000 |      200000 |  170000 |
+|  00:11  |        1900000 |      200000 |  172727 |
+|  00:12  |        2000000 |      100000 |  166666 |
+|  00:13  |        2200000 |      200000 |  169230 |
+|  00:14  |        2400000 |      200000 |  171428 |
+|  00:15  |        2593000 |      193000 |  172866 |
+|  00:16  |        2700000 |      107000 |  168750 |
+|  00:17  |        2900000 |      200000 |  170588 |
+|  00:18  |        3100000 |      200000 |  172222 |
+|  00:19  |        3300000 |      200000 |  173684 |
+|  00:20  |        3400000 |      100000 |  170000 |
+|  00:21  |        3600000 |      200000 |  171428 |
+|  00:22  |        3800000 |      200000 |  172727 |
+|  00:23  |        4000000 |      200000 |  173913 |
+|  00:24  |        4199000 |      199000 |  174958 |
+|  00:25  |        4300000 |      101000 |  172000 |
+|  00:26  |        4500000 |      200000 |  173076 |
+|  00:27  |        4700000 |      200000 |  174074 |
+|  00:28  |        4900000 |      200000 |  175000 |
+|  00:29  |        5000000 |      100000 |  172413 |
+|  00:30  |        5200000 |      200000 |  173333 |
+|  00:31  |        5400000 |      200000 |  174193 |
+|  00:32  |        5600000 |      200000 |  175000 |
+|  00:33  |        5784000 |      184000 |  175272 |
+|  00:34  |        5900000 |      116000 |  173529 |
+|  00:35  |        6100000 |      200000 |  174285 |
+|  00:36  |        6300000 |      200000 |  175000 |
+|  00:37  |        6480000 |      180000 |  175135 |
+|  00:38  |        6600000 |      120000 |  173684 |
+|  00:39  |        6800000 |      200000 |  174358 |
+|  00:40  |        7000000 |      200000 |  175000 |
+|  00:41  |        7113000 |      113000 |  173487 |
+|  00:42  |        7300000 |      187000 |  173809 |
+|  00:43  |        7500000 |      200000 |  174418 |
+|  00:44  |        7700000 |      200000 |  175000 |
+|  00:45  |        7888000 |      188000 |  175288 |
+|  00:46  |        8000000 |      112000 |  173913 |
+|  00:47  |        8200000 |      200000 |  174468 |
+|  00:48  |        8400000 |      200000 |  175000 |
+|  00:49  |        8600000 |      200000 |  175510 |
+|  00:50  |        8700000 |      100000 |  174000 |
+|  00:51  |        8900000 |      200000 |  174509 |
+|  00:52  |        9100000 |      200000 |  175000 |
+|  00:53  |        9300000 |      200000 |  175471 |
+|  00:54  |        9494000 |      194000 |  175814 |
+|  00:55  |        9600000 |      106000 |  174545 |
+|  00:56  |        9800000 |      200000 |  175000 |
+|  00:57  |       10000000 |      200000 |  175438 |
+|  00:58  |       10200000 |      200000 |  175862 |
+|  00:59  |       10300000 |      100000 |  174576 |
+|  01:00  |       10500000 |      200000 |  175000 |
+|  01:01  |       10700000 |      200000 |  175409 |
+|  01:02  |       10900000 |      200000 |  175806 |
+|  01:03  |       11007000 |      107000 |  174714 |
+|  01:04  |       11200000 |      193000 |  175000 |
+|  01:05  |       11400000 |      200000 |  175384 |
+|  01:06  |       11600000 |      200000 |  175757 |
+|  01:07  |       11718000 |      118000 |  174895 |
+|  01:08  |       11900000 |      182000 |  175000 |
+|  01:09  |       12100000 |      200000 |  175362 |
+|  01:10  |       12300000 |      200000 |  175714 |
+|  01:11  |       12469000 |      169000 |  175619 |
+|  01:12  |       12600000 |      131000 |  175000 |
+|  01:13  |       12800000 |      200000 |  175342 |
+|  01:14  |       13000000 |      200000 |  175675 |
+|  01:15  |       13200000 |      200000 |  176000 |
+|  01:16  |       13335000 |      135000 |  175460 |
+|  01:17  |       13500000 |      165000 |  175324 |
+|  01:18  |       13700000 |      200000 |  175641 |
+|  01:19  |       13900000 |      200000 |  175949 |
+|  01:20  |       14014000 |      114000 |  175175 |
+|  01:21  |       14200000 |      186000 |  175308 |
+|  01:22  |       14400000 |      200000 |  175609 |
+|  01:23  |       14526000 |      126000 |  175012 |
+|  01:24  |       14700000 |      174000 |  175000 |
+|  01:25  |       14900000 |      200000 |  175294 |
+|  01:26  |       15100000 |      200000 |  175581 |
+|  01:27  |       15282000 |      182000 |  175655 |
+|  01:28  |       15400000 |      118000 |  175000 |
+|  01:29  |       15600000 |      200000 |  175280 |
+|  01:30  |       15800000 |      200000 |  175555 |
+|  01:31  |       16000000 |      200000 |  175824 |
+|  01:32  |       16191000 |      191000 |  175989 |
+|  01:33  |       16304000 |      113000 |  175311 |
+|  01:34  |       16500000 |      196000 |  175531 |
+|  01:35  |       16700000 |      200000 |  175789 |
+|  01:36  |       16900000 |      200000 |  176041 |
+|  01:37  |       17009000 |      109000 |  175350 |
+|  01:38  |       17200000 |      191000 |  175510 |
+|  01:39  |       17400000 |      200000 |  175757 |
+|  01:40  |       17600000 |      200000 |  176000 |
+|  01:41  |       17730000 |      130000 |  175544 |
+|  01:42  |       17900000 |      170000 |  175490 |
+|  01:43  |       18100000 |      200000 |  175728 |
+|  01:44  |       18300000 |      200000 |  175961 |
+|  01:45  |       18495000 |      195000 |  176142 |
+|  01:46  |       18601000 |      106000 |  175481 |
+|  01:47  |       18800000 |      199000 |  175700 |
+|  01:48  |       19000000 |      200000 |  175925 |
+|  01:49  |       19200000 |      200000 |  176146 |
+|  01:50  |       19322000 |      122000 |  175654 |
+|  01:51  |       19500000 |      178000 |  175675 |
+|  01:52  |       19700000 |      200000 |  175892 |
+|  01:53  |       19900000 |      200000 |  176106 |
+|  01:54  |       20036000 |      136000 |  175754 |
+|  01:55  |       20200000 |      164000 |  175652 |
+|  01:56  |       20400000 |      200000 |  175862 |
+|  01:57  |       20600000 |      200000 |  176068 |
+|  01:58  |       20770000 |      170000 |  176016 |
+|  01:59  |       20901000 |      131000 |  175638 |
+|  02:00  |       21100000 |      199000 |  175833 |
+|  02:01  |       21300000 |      200000 |  176033 |
+|  02:02  |       21500000 |      200000 |  176229 |
+|  02:03  |       21606000 |      106000 |  175658 |
+|  02:04  |       21800000 |      194000 |  175806 |
+|  02:05  |       22000000 |      200000 |  176000 |
+|  02:06  |       22193000 |      193000 |  176134 |
+|  02:07  |       22304000 |      111000 |  175622 |
+|  02:08  |       22500000 |      196000 |  175781 |
+|  02:09  |       22700000 |      200000 |  175968 |
+|  02:10  |       22896000 |      196000 |  176123 |
+|  02:11  |       23015000 |      119000 |  175687 |
+|  02:12  |       23200000 |      185000 |  175757 |
+|  02:13  |       23400000 |      200000 |  175939 |
+|  02:14  |       23600000 |      200000 |  176119 |
+|  02:15  |       23730000 |      130000 |  175777 |
+|  02:16  |       23900000 |      170000 |  175735 |
+|  02:17  |       24100000 |      200000 |  175912 |
+|  02:18  |       24300000 |      200000 |  176086 |
+|  02:19  |       24442000 |      142000 |  175841 |
+|  02:20  |       24600000 |      158000 |  175714 |
+|  02:21  |       24800000 |      200000 |  175886 |
+|  02:22  |       25000000 |      200000 |  176056 |
+|  02:23  |       25156000 |      156000 |  175916 |
+|  02:24  |       25300000 |      144000 |  175694 |
+|  02:25  |       25500000 |      200000 |  175862 |
+|  02:26  |       25700000 |      200000 |  176027 |
+|  02:27  |       25830000 |      130000 |  175714 |
+|  02:28  |       26000000 |      170000 |  175675 |
+|  02:29  |       26200000 |      200000 |  175838 |
+|  02:30  |       26399000 |      199000 |  175993 |
+|  02:31  |       26530000 |      131000 |  175695 |
+|  02:32  |       26700000 |      170000 |  175657 |
+|  02:33  |       26900000 |      200000 |  175816 |
+|  02:34  |       27094000 |      194000 |  175935 |
+|  02:35  |       27220000 |      126000 |  175612 |
+|  02:36  |       27400000 |      180000 |  175641 |
+|  02:37  |       27600000 |      200000 |  175796 |
+|  02:38  |       27798000 |      198000 |  175936 |
+|  02:39  |       27911000 |      113000 |  175540 |
+|  02:40  |       28100000 |      189000 |  175625 |
+|  02:41  |       28300000 |      200000 |  175776 |
+|  02:42  |       28499000 |      199000 |  175919 |
+|  02:43  |       28631000 |      132000 |  175650 |
+|  02:44  |       28800000 |      169000 |  175609 |
+|  02:45  |       29000000 |      200000 |  175757 |
+|  02:46  |       29199000 |      199000 |  175897 |
+|  02:47  |       29303000 |      104000 |  175467 |
+|  02:48  |       29500000 |      197000 |  175595 |
+|  02:49  |       29631000 |      131000 |  175331 |
+|  02:50  |       29800000 |      169000 |  175294 |
+|  02:51  |       30000000 |      200000 |  175438 |
+|  02:52  |       30200000 |      200000 |  175581 |
+|  02:53  |       30318000 |      118000 |  175248 |
+|  02:54  |       30500000 |      182000 |  175287 |
+|  02:55  |       30700000 |      200000 |  175428 |
+|  02:56  |       30900000 |      200000 |  175568 |
+|  02:57  |       31078000 |      178000 |  175581 |
+|  02:58  |       31203000 |      125000 |  175297 |
+|  02:59  |       31400000 |      197000 |  175418 |
+|  03:00  |       31600000 |      200000 |  175555 |
+|  03:01  |       31779000 |      179000 |  175574 |
+|  03:02  |       31903000 |      124000 |  175291 |
+|  03:03  |       32100000 |      197000 |  175409 |
+|  03:04  |       32300000 |      200000 |  175543 |
+|  03:05  |       32495000 |      195000 |  175648 |
+|  03:06  |       32639000 |      144000 |  175478 |
+|  03:07  |       32800000 |      161000 |  175401 |
+|  03:08  |       33000000 |      200000 |  175531 |
+|  03:09  |       33200000 |      200000 |  175661 |
+|  03:10  |       33368000 |      168000 |  175621 |
+|  03:11  |       33500000 |      132000 |  175392 |
+|  03:12  |       33700000 |      200000 |  175520 |
+|  03:13  |       33900000 |      200000 |  175647 |
+|  03:14  |       34088000 |      188000 |  175711 |
+|  03:15  |       34208000 |      120000 |  175425 |
+|  03:16  |       34400000 |      192000 |  175510 |
+|  03:17  |       34600000 |      200000 |  175634 |
+|  03:18  |       34800000 |      200000 |  175757 |
+|  03:19  |       34960000 |      160000 |  175678 |
+|  03:20  |       35100000 |      140000 |  175500 |
+|  03:21  |       35300000 |      200000 |  175621 |
+|  03:22  |       35500000 |      200000 |  175742 |
+|  03:23  |       35695000 |      195000 |  175837 |
+|  03:24  |       35826000 |      131000 |  175617 |
+|  03:25  |       36000000 |      174000 |  175609 |
+|  03:26  |       36200000 |      200000 |  175728 |
+|  03:27  |       36400000 |      200000 |  175845 |
+|  03:28  |       36559000 |      159000 |  175764 |
+|  03:29  |       36704000 |      145000 |  175617 |
+|  03:30  |       36900000 |      196000 |  175714 |
+|  03:31  |       37100000 |      200000 |  175829 |
+|  03:32  |       37266000 |      166000 |  175783 |
+|  03:33  |       37404000 |      138000 |  175605 |
+|  03:34  |       37600000 |      196000 |  175700 |
+|  03:35  |       37800000 |      200000 |  175813 |
+|  03:36  |       37974000 |      174000 |  175805 |
+|  03:37  |       38104000 |      130000 |  175594 |
+|  03:38  |       38300000 |      196000 |  175688 |
+|  03:39  |       38500000 |      200000 |  175799 |
+|  03:40  |       38686000 |      186000 |  175845 |
+|  03:41  |       38812000 |      126000 |  175619 |
+|  03:42  |       39000000 |      188000 |  175675 |
+|  03:43  |       39200000 |      200000 |  175784 |
+|  03:44  |       39393000 |      193000 |  175861 |
+|  03:45  |       39509000 |      116000 |  175595 |
+|  03:46  |       39700000 |      191000 |  175663 |
+|  03:47  |       39900000 |      200000 |  175770 |
+|  03:48  |       40096000 |      196000 |  175859 |
+|  03:49  |       40222000 |      126000 |  175641 |
+|  03:50  |       40400000 |      178000 |  175652 |
+|  03:51  |       40600000 |      200000 |  175757 |
+|  03:52  |       40799000 |      199000 |  175857 |
+|  03:53  |       40963000 |      164000 |  175806 |
+|  03:54  |       41104000 |      141000 |  175658 |
+|  03:55  |       41300000 |      196000 |  175744 |
+|  03:56  |       41500000 |      200000 |  175847 |
+|  03:57  |       41671000 |      171000 |  175827 |
+|  03:58  |       41810000 |      139000 |  175672 |
+|  03:59  |       42000000 |      190000 |  175732 |
+|  04:00  |       42200000 |      200000 |  175833 |
+|  04:01  |       42388000 |      188000 |  175883 |
+|  04:02  |       42510000 |      122000 |  175661 |
+|  04:03  |       42700000 |      190000 |  175720 |
+|  04:04  |       42900000 |      200000 |  175819 |
+|  04:05  |       43082000 |      182000 |  175844 |
+|  04:06  |       43213000 |      131000 |  175662 |
+|  04:07  |       43400000 |      187000 |  175708 |
+|  04:08  |       43600000 |      200000 |  175806 |
+|  04:09  |       43783000 |      183000 |  175835 |
+|  04:10  |       43913000 |      130000 |  175652 |
+|  04:11  |       44100000 |      187000 |  175697 |
+|  04:12  |       44300000 |      200000 |  175793 |
+|  04:13  |       44497000 |      197000 |  175877 |
+|  04:14  |       44637000 |      140000 |  175736 |
+|  04:15  |       44800000 |      163000 |  175686 |
+|  04:16  |       45000000 |      200000 |  175781 |
+|  04:17  |       45198000 |      198000 |  175867 |
+|  04:18  |       45347000 |      149000 |  175763 |
+|  04:19  |       45500000 |      153000 |  175675 |
+|  04:20  |       45700000 |      200000 |  175769 |
+|  04:21  |       45900000 |      200000 |  175862 |
+|  04:22  |       46089000 |      189000 |  175912 |
+|  04:23  |       46231000 |      142000 |  175783 |
+|  04:24  |       46400000 |      169000 |  175757 |
+|  04:25  |       46600000 |      200000 |  175849 |
+|  04:26  |       46798000 |      198000 |  175932 |
+|  04:27  |       46967000 |      169000 |  175906 |
+|  04:28  |       47108000 |      141000 |  175776 |
+|  04:29  |       47300000 |      192000 |  175836 |
+|  04:30  |       47498000 |      198000 |  175918 |
+|  04:31  |       47659000 |      161000 |  175863 |
+|  04:32  |       47800000 |      141000 |  175735 |
+|  04:33  |       48000000 |      200000 |  175824 |
+|  04:34  |       48198000 |      198000 |  175905 |
+|  04:35  |       48373000 |      175000 |  175901 |
+|  04:36  |       48508000 |      135000 |  175753 |
+|  04:37  |       48700000 |      192000 |  175812 |
+|  04:38  |       48899000 |      199000 |  175895 |
+|  04:39  |       49048000 |      149000 |  175799 |
+|  04:40  |       49200000 |      152000 |  175714 |
+|  04:41  |       49400000 |      200000 |  175800 |
+|  04:42  |       49598000 |      198000 |  175879 |
+|  04:43  |       49763000 |      165000 |  175840 |
+|  04:44  |       49905000 |      142000 |  175721 |
+|  04:45  |       50100000 |      195000 |  175789 |
+|  04:46  |       50300000 |      200000 |  175874 |
+|  04:47  |       50487000 |      187000 |  175912 |
+|  04:48  |       50628000 |      141000 |  175791 |
+|  04:49  |       50800000 |      172000 |  175778 |
+|  04:50  |       51000000 |      200000 |  175862 |
+|  04:51  |       51196000 |      196000 |  175931 |
+|  04:52  |       51359000 |      163000 |  175886 |
+|  04:53  |       51505000 |      146000 |  175784 |
+|  04:54  |       51700000 |      195000 |  175850 |
+|  04:55  |       51900000 |      200000 |  175932 |
+|  04:56  |       52077000 |      177000 |  175935 |
+|  04:57  |       52203000 |      126000 |  175767 |
+|  04:58  |       52400000 |      197000 |  175838 |
+|  04:59  |       52599000 |      199000 |  175916 |
+|  05:00  |       52755000 |      156000 |  175850 |
+|  05:01  |       52901000 |      146000 |  175750 |
+|  05:02  |       53100000 |      199000 |  175827 |
+|  05:03  |       53299000 |      199000 |  175904 |
+|  05:04  |       53470000 |      171000 |  175888 |
+|  05:05  |       53606000 |      136000 |  175757 |
+|  05:06  |       53800000 |      194000 |  175816 |
+|  05:07  |       54000000 |      200000 |  175895 |
+|  05:08  |       54191000 |      191000 |  175944 |
+|  05:09  |       54327000 |      136000 |  175815 |
+|  05:10  |       54500000 |      173000 |  175806 |
+|  05:11  |       54700000 |      200000 |  175884 |
+|  05:12  |       54897000 |      197000 |  175951 |
+|  05:13  |       55045000 |      148000 |  175862 |
+|  05:14  |       55204000 |      159000 |  175808 |
+|  05:15  |       55400000 |      196000 |  175873 |
+|  05:16  |       55599000 |      199000 |  175946 |
+|  05:17  |       55764000 |      165000 |  175911 |
+|  05:18  |       55906000 |      142000 |  175805 |
+|  05:19  |       56100000 |      194000 |  175862 |
+|  05:20  |       56300000 |      200000 |  175937 |
+|  05:21  |       56481000 |      181000 |  175953 |
+|  05:22  |       56609000 |      128000 |  175804 |
+|  05:23  |       56800000 |      191000 |  175851 |
+|  05:24  |       57000000 |      200000 |  175925 |
+|  05:25  |       57179000 |      179000 |  175935 |
+|  05:26  |       57306000 |      127000 |  175785 |
+|  05:27  |       57500000 |      194000 |  175840 |
+|  05:28  |       57699000 |      199000 |  175911 |
+|  05:29  |       57875000 |      176000 |  175911 |
+|  05:30  |       58011000 |      136000 |  175790 |
+|  05:31  |       58200000 |      189000 |  175830 |
+|  05:32  |       58400000 |      200000 |  175903 |
+|  05:33  |       58592000 |      192000 |  175951 |
+|  05:34  |       58731000 |      139000 |  175841 |
+|  05:35  |       58900000 |      169000 |  175820 |
+|  05:36  |       59100000 |      200000 |  175892 |
+|  05:37  |       59299000 |      199000 |  175961 |
+|  05:38  |       59432000 |      133000 |  175834 |
+|  05:39  |       59600000 |      168000 |  175811 |
+|  05:40  |       59700000 |      100000 |  175588 |
+|  05:41  |       59899000 |      199000 |  175656 |
+|  05:42  |       60064000 |      165000 |  175625 |
+|  05:43  |       60206000 |      142000 |  175527 |
+|  05:44  |       60400000 |      194000 |  175581 |
+|  05:45  |       60599000 |      199000 |  175649 |
+|  05:46  |       60769000 |      170000 |  175632 |
+|  05:47  |       60907000 |      138000 |  175524 |
+|  05:48  |       61100000 |      193000 |  175574 |
+|  05:49  |       61299000 |      199000 |  175641 |
+|  05:50  |       61476000 |      177000 |  175645 |
+|  05:51  |       61610000 |      134000 |  175527 |
+|  05:52  |       61800000 |      190000 |  175568 |
+|  05:53  |       62000000 |      200000 |  175637 |
+|  05:54  |       62198000 |      198000 |  175700 |
+|  05:55  |       62359000 |      161000 |  175659 |
+|  05:56  |       62505000 |      146000 |  175575 |
+|  05:57  |       62700000 |      195000 |  175630 |
+|  05:58  |       62899000 |      199000 |  175695 |
+|  05:59  |       63078000 |      179000 |  175704 |
+|  06:00  |       63214000 |      136000 |  175594 |
+|  06:01  |       63400000 |      186000 |  175623 |
+|  06:02  |       63600000 |      200000 |  175690 |
+|  06:03  |       63797000 |      197000 |  175749 |
+|  06:04  |       63939000 |      142000 |  175656 |
+|  06:05  |       64101000 |      162000 |  175619 |
+|  06:06  |       64300000 |      199000 |  175683 |
+|  06:07  |       64499000 |      199000 |  175746 |
+|  06:08  |       64672000 |      173000 |  175739 |
+|  06:09  |       64816000 |      144000 |  175653 |
+|  06:10  |       65000000 |      184000 |  175675 |
+|  06:11  |       65199000 |      199000 |  175738 |
+|  06:12  |       65372000 |      173000 |  175731 |
+|  06:13  |       65503000 |      131000 |  175611 |
+|  06:14  |       65700000 |      197000 |  175668 |
+|  06:15  |       65899000 |      199000 |  175730 |
+|  06:16  |       66052000 |      153000 |  175670 |
+|  06:17  |       66202000 |      150000 |  175602 |
+|  06:18  |       66400000 |      198000 |  175661 |
+|  06:19  |       66598000 |      198000 |  175720 |
+|  06:20  |       66770000 |      172000 |  175710 |
+|  06:21  |       66918000 |      148000 |  175637 |
+|  06:22  |       67100000 |      182000 |  175654 |
+|  06:23  |       67299000 |      199000 |  175715 |
+|  06:24  |       67471000 |      172000 |  175705 |
+|  06:25  |       67603000 |      132000 |  175592 |
+|  06:26  |       67800000 |      197000 |  175647 |
+|  06:27  |       67998000 |      198000 |  175705 |
+|  06:28  |       68151000 |      153000 |  175646 |
+|  06:29  |       68307000 |      156000 |  175596 |
+|  06:30  |       68500000 |      193000 |  175641 |
+|  06:31  |       68699000 |      199000 |  175700 |
+|  06:32  |       68882000 |      183000 |  175719 |
+|  06:33  |       69008000 |      126000 |  175592 |
+|  06:34  |       69200000 |      192000 |  175634 |
+|  06:35  |       69400000 |      200000 |  175696 |
+|  06:36  |       69591000 |      191000 |  175734 |
+|  06:37  |       69739000 |      148000 |  175664 |
+|  06:38  |       69906000 |      167000 |  175643 |
+|  06:39  |       70100000 |      194000 |  175689 |
+|  06:40  |       70298000 |      198000 |  175745 |
+|  06:41  |       70461000 |      163000 |  175713 |
+|  06:42  |       70602000 |      141000 |  175626 |
+|  06:43  |       70800000 |      198000 |  175682 |
+|  06:44  |       70996000 |      196000 |  175732 |
+|  06:45  |       71154000 |      158000 |  175688 |
+|  06:46  |       71307000 |      153000 |  175633 |
+|  06:47  |       71500000 |      193000 |  175675 |
+|  06:48  |       71698000 |      198000 |  175730 |
+|  06:49  |       71876000 |      178000 |  175735 |
+|  06:50  |       72011000 |      135000 |  175636 |
+|  06:51  |       72200000 |      189000 |  175669 |
+|  06:52  |       72400000 |      200000 |  175728 |
+|  06:53  |       72589000 |      189000 |  175760 |
+|  06:54  |       72730000 |      141000 |  175676 |
+|  06:55  |       72904000 |      174000 |  175672 |
+|  06:56  |       73100000 |      196000 |  175721 |
+|  06:57  |       73297000 |      197000 |  175772 |
+|  06:58  |       73469000 |      172000 |  175763 |
+|  06:59  |       73608000 |      139000 |  175675 |
+|  07:00  |       73800000 |      192000 |  175714 |
+|  07:01  |       73999000 |      199000 |  175769 |
+|  07:02  |       74175000 |      176000 |  175770 |
+|  07:03  |       74323000 |      148000 |  175704 |
+|  07:04  |       74501000 |      178000 |  175709 |
+|  07:05  |       74700000 |      199000 |  175764 |
+|  07:06  |       74895000 |      195000 |  175809 |
+|  07:07  |       75051000 |      156000 |  175763 |
+|  07:08  |       75206000 |      155000 |  175714 |
+|  07:09  |       75400000 |      194000 |  175757 |
+|  07:10  |       75597000 |      197000 |  175806 |
+|  07:11  |       75735000 |      138000 |  175719 |
+|  07:12  |       75904000 |      169000 |  175703 |
+|  07:13  |       76100000 |      196000 |  175750 |
+|  07:14  |       76291000 |      191000 |  175785 |
+|  07:15  |       76446000 |      155000 |  175737 |
+|  07:16  |       76604000 |      158000 |  175697 |
+|  07:17  |       76800000 |      196000 |  175743 |
+|  07:18  |       76997000 |      197000 |  175792 |
+|  07:19  |       77166000 |      169000 |  175776 |
+|  07:20  |       77315000 |      149000 |  175715 |
+|  07:21  |       77500000 |      185000 |  175736 |
+|  07:22  |       77698000 |      198000 |  175787 |
+|  07:23  |       77875000 |      177000 |  175790 |
+|  07:24  |       78023000 |      148000 |  175727 |
+|  07:25  |       78200000 |      177000 |  175730 |
+|  07:26  |       78398000 |      198000 |  175780 |
+|  07:27  |       78572000 |      174000 |  175776 |
+|  07:28  |       78722000 |      150000 |  175718 |
+|  07:29  |       78900000 |      178000 |  175723 |
+|  07:30  |       79098000 |      198000 |  175773 |
+|  07:31  |       79276000 |      178000 |  175778 |
+|  07:32  |       79416000 |      140000 |  175699 |
+|  07:33  |       79600000 |      184000 |  175717 |
+|  07:34  |       79799000 |      199000 |  175768 |
+|  07:35  |       79982000 |      183000 |  175784 |
+|  07:36  |       80125000 |      143000 |  175712 |
+|  07:37  |       80301000 |      176000 |  175713 |
+|  07:38  |       80500000 |      199000 |  175764 |
+|  07:39  |       80675000 |      175000 |  175762 |
+|  07:40  |       80822000 |      147000 |  175700 |
+|  07:41  |       81000000 |      178000 |  175704 |
+|  07:42  |       81199000 |      199000 |  175755 |
+|  07:43  |       81377000 |      178000 |  175760 |
+|  07:44  |       81517000 |      140000 |  175683 |
+|  07:45  |       81700000 |      183000 |  175698 |
+|  07:46  |       81898000 |      198000 |  175746 |
+|  07:47  |       82080000 |      182000 |  175760 |
+|  07:48  |       82217000 |      137000 |  175677 |
+|  07:49  |       82400000 |      183000 |  175692 |
+|  07:50  |       82598000 |      198000 |  175740 |
+|  07:51  |       82786000 |      188000 |  175766 |
+|  07:52  |       82938000 |      152000 |  175716 |
+|  07:53  |       83104000 |      166000 |  175695 |
+|  07:54  |       83300000 |      196000 |  175738 |
+|  07:55  |       83496000 |      196000 |  175781 |
+|  07:56  |       83667000 |      171000 |  175771 |
+|  07:57  |       83812000 |      145000 |  175706 |
+|  07:58  |       84000000 |      188000 |  175732 |
+|  07:59  |       84197000 |      197000 |  175776 |
+|  08:00  |       84375000 |      178000 |  175781 |
+|  08:01  |       84520000 |      145000 |  175717 |
+|  08:02  |       84700000 |      180000 |  175726 |
+|  08:03  |       84898000 |      198000 |  175772 |
+|  08:04  |       85091000 |      193000 |  175807 |
+|  08:05  |       85233000 |      142000 |  175738 |
+|  08:06  |       85400000 |      167000 |  175720 |
+|  08:07  |       85600000 |      200000 |  175770 |
+|  08:08  |       85794000 |      194000 |  175807 |
+|  08:09  |       85954000 |      160000 |  175775 |
+|  08:10  |       86113000 |      159000 |  175740 |
+|  08:11  |       86300000 |      187000 |  175763 |
+|  08:12  |       86497000 |      197000 |  175806 |
+|  08:13  |       86673000 |      176000 |  175807 |
+|  08:14  |       86813000 |      140000 |  175734 |
+|  08:15  |       87000000 |      187000 |  175757 |
+|  08:16  |       87197000 |      197000 |  175800 |
+|  08:17  |       87364000 |      167000 |  175782 |
+|  08:18  |       87511000 |      147000 |  175724 |
+|  08:19  |       87700000 |      189000 |  175751 |
+|  08:20  |       87894000 |      194000 |  175788 |
+|  08:21  |       88044000 |      150000 |  175736 |
+|  08:22  |       88210000 |      166000 |  175717 |
+|  08:23  |       88400000 |      190000 |  175745 |
+|  08:24  |       88596000 |      196000 |  175785 |
+|  08:25  |       88756000 |      160000 |  175754 |
+|  08:26  |       88912000 |      156000 |  175715 |
+|  08:27  |       89100000 |      188000 |  175739 |
+|  08:28  |       89298000 |      198000 |  175783 |
+|  08:29  |       89477000 |      179000 |  175789 |
+|  08:30  |       89625000 |      148000 |  175735 |
+|  08:31  |       89800000 |      175000 |  175733 |
+|  08:32  |       89999000 |      199000 |  175779 |
+|  08:33  |       90193000 |      194000 |  175814 |
+|  08:34  |       90314000 |      121000 |  175708 |
+|  08:35  |       90500000 |      186000 |  175728 |
+|  08:36  |       90698000 |      198000 |  175771 |
+|  08:37  |       90872000 |      174000 |  175767 |
+|  08:38  |       91017000 |      145000 |  175708 |
+|  08:39  |       91200000 |      183000 |  175722 |
+|  08:40  |       91397000 |      197000 |  175763 |
+|  08:41  |       91569000 |      172000 |  175756 |
+|  08:42  |       91720000 |      151000 |  175708 |
+|  08:43  |       91900000 |      180000 |  175717 |
+|  08:44  |       92099000 |      199000 |  175761 |
+|  08:45  |       92281000 |      182000 |  175773 |
+|  08:46  |       92432000 |      151000 |  175726 |
+|  08:47  |       92602000 |      170000 |  175715 |
+|  08:48  |       92800000 |      198000 |  175757 |
+|  08:49  |       92993000 |      193000 |  175790 |
+|  08:50  |       93157000 |      164000 |  175767 |
+|  08:51  |       93313000 |      156000 |  175730 |
+|  08:52  |       93500000 |      187000 |  175751 |
+|  08:53  |       93698000 |      198000 |  175793 |
+|  08:54  |       93868000 |      170000 |  175782 |
+|  08:55  |       94013000 |      145000 |  175725 |
+|  08:56  |       94200000 |      187000 |  175746 |
+|  08:57  |       94398000 |      198000 |  175787 |
+|  08:58  |       94568000 |      170000 |  175776 |
+|  08:59  |       94721000 |      153000 |  175734 |
+|  09:00  |       94901000 |      180000 |  175742 |
+|  09:01  |       95099000 |      198000 |  175783 |
+|  09:02  |       95293000 |      194000 |  175817 |
+|  09:03  |       95438000 |      145000 |  175760 |
+|  09:04  |       95600000 |      162000 |  175735 |
+|  09:05  |       95798000 |      198000 |  175776 |
+|  09:06  |       95994000 |      196000 |  175813 |
+|  09:07  |       96141000 |      147000 |  175760 |
+|  09:08  |       96309000 |      168000 |  175746 |
+|  09:09  |       96500000 |      191000 |  175774 |
+|  09:10  |       96697000 |      197000 |  175812 |
+|  09:11  |       96863000 |      166000 |  175794 |
+|  09:12  |       97016000 |      153000 |  175753 |
+|  09:13  |       97200000 |      184000 |  175768 |
+|  09:14  |       97398000 |      198000 |  175808 |
+|  09:15  |       97555000 |      157000 |  175774 |
+|  09:16  |       97711000 |      156000 |  175739 |
+|  09:17  |       97900000 |      189000 |  175763 |
+|  09:18  |       98094000 |      194000 |  175795 |
+|  09:19  |       98251000 |      157000 |  175762 |
+|  09:20  |       98412000 |      161000 |  175735 |
+|  09:21  |       98600000 |      188000 |  175757 |
+|  09:22  |       98796000 |      196000 |  175793 |
+|  09:23  |       98969000 |      173000 |  175788 |
+|  09:24  |       99125000 |      156000 |  175753 |
+|  09:25  |       99302000 |      177000 |  175755 |
+|  09:26  |       99498000 |      196000 |  175791 |
+|  09:27  |       99685000 |      187000 |  175811 |
+|  09:28  |       99827000 |      142000 |  175751 |
+|  09:29  |      100008000 |      181000 |  175760 |
+|  09:30  |      100200000 |      192000 |  175789 |
+|  09:31  |      100396000 |      196000 |  175824 |
+|  09:32  |      100571000 |      175000 |  175823 |
+|  09:33  |      100719000 |      148000 |  175774 |
+|  09:34  |      100900000 |      181000 |  175783 |
+|  09:35  |      101097000 |      197000 |  175820 |
+|  09:36  |      101274000 |      177000 |  175822 |
+|  09:37  |      101419000 |      145000 |  175769 |
+|  09:38  |      101600000 |      181000 |  175778 |
+|  09:39  |      101797000 |      197000 |  175815 |
+|  09:40  |      101960000 |      163000 |  175793 |
+|  09:41  |      102113000 |      153000 |  175753 |
+|  09:42  |      102300000 |      187000 |  175773 |
+|  09:43  |      102498000 |      198000 |  175811 |
+|  09:44  |      102679000 |      181000 |  175820 |
+|  09:45  |      102824000 |      145000 |  175767 |
+|  09:46  |      103000000 |      176000 |  175767 |
+|  09:47  |      103197000 |      197000 |  175804 |
+|  09:48  |      103370000 |      173000 |  175799 |
+|  09:49  |      103518000 |      148000 |  175752 |
+|  09:50  |      103700000 |      182000 |  175762 |
+|  09:51  |      103899000 |      199000 |  175802 |
+|  09:52  |      104084000 |      185000 |  175817 |
+|  09:53  |      104243000 |      159000 |  175789 |
+|  09:54  |      104409000 |      166000 |  175772 |
+|  09:55  |      104599000 |      190000 |  175796 |
+|  09:56  |      104796000 |      197000 |  175832 |
+|  09:57  |      104969000 |      173000 |  175827 |
+|  09:58  |      105118000 |      149000 |  175782 |
+|  09:59  |      105302000 |      184000 |  175796 |
+|  10:00  |      105499000 |      197000 |  175831 |
 ------------------------------------------------------------
                           RESULTS
 ------------------------------------------------------------
-Total Requests: 97800000
+Total Requests: 105499000
 Failures:       0
 ============================================================
 
 
-Stopping server (PID 441506)...
+Stopping server (PID 724982)...
 Stopped
 
 ============================================================
@@ -2158,11 +2020,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] KVStoreTest.DeleteMissingKey
 [       OK ] KVStoreTest.DeleteMissingKey (0 ms)
 [ RUN      ] KVStoreTest.ConcurrentWritesAndReads
-[       OK ] KVStoreTest.ConcurrentWritesAndReads (402 ms)
-[----------] 4 tests from KVStoreTest (403 ms total)
+[       OK ] KVStoreTest.ConcurrentWritesAndReads (369 ms)
+[----------] 4 tests from KVStoreTest (369 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (403 ms total)
+[==========] 4 tests from 1 test suite ran. (369 ms total)
 [  PASSED  ] 4 tests.
 
 [ASan+UBSan] test_utils...
@@ -2210,11 +2072,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser
 [       OK ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser (0 ms)
 [ RUN      ] UserBookTest.ConcurrentRegistrationsAllUnique
-[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (192 ms)
-[----------] 8 tests from UserBookTest (192 ms total)
+[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (164 ms)
+[----------] 8 tests from UserBookTest (165 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 1 test suite ran. (192 ms total)
+[==========] 8 tests from 1 test suite ran. (165 ms total)
 [  PASSED  ] 8 tests.
 
 [ASan+UBSan] test_persistence...
@@ -2225,7 +2087,7 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] PersistenceTest.WritesSurviveRestart
 AOF file not found. Starting fresh.
 Loading old server data from AOF file...
-[       OK ] PersistenceTest.WritesSurviveRestart (1 ms)
+[       OK ] PersistenceTest.WritesSurviveRestart (0 ms)
 [ RUN      ] PersistenceTest.DeletesSurviveRestart
 AOF file not found. Starting fresh.
 Loading old server data from AOF file...
@@ -2242,10 +2104,10 @@ AOF file not found. Starting fresh.
 [ RUN      ] PersistenceTest.FreshStartWithNoExistingFileWorksNormally
 AOF file not found. Starting fresh.
 [       OK ] PersistenceTest.FreshStartWithNoExistingFileWorksNormally (0 ms)
-[----------] 6 tests from PersistenceTest (2 ms total)
+[----------] 6 tests from PersistenceTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (3 ms total)
+[==========] 6 tests from 1 test suite ran. (1 ms total)
 [  PASSED  ] 6 tests.
 
 [ASan+UBSan] test_full_flow...
@@ -2262,7 +2124,7 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [----------] 3 tests from FullFlowTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (1 ms total)
+[==========] 3 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 3 tests.
 
 [ASan+UBSan] test_server_client...
@@ -2275,10 +2137,10 @@ Epoll server is listening on the port 18080
 [       OK ] ServerClientTest.CompleteKeyValueLifecycle (302 ms)
 [ RUN      ] ServerClientTest.InvalidCommands
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.InvalidCommands (302 ms)
+[       OK ] ServerClientTest.InvalidCommands (303 ms)
 [ RUN      ] ServerClientTest.MultipleRequests
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.MultipleRequests (342 ms)
+[       OK ] ServerClientTest.MultipleRequests (343 ms)
 [ RUN      ] ServerClientTest.UserIsolation
 Epoll server is listening on the port 18080
 [       OK ] ServerClientTest.UserIsolation (303 ms)
@@ -2287,11 +2149,11 @@ Epoll server is listening on the port 18080
 [       OK ] ServerClientTest.LoginWithRegisteredUser (302 ms)
 [ RUN      ] ServerClientTest.InvalidLoginRejected
 Epoll server is listening on the port 18080
-[       OK ] ServerClientTest.InvalidLoginRejected (301 ms)
-[----------] 6 tests from ServerClientTest (1854 ms total)
+[       OK ] ServerClientTest.InvalidLoginRejected (302 ms)
+[----------] 6 tests from ServerClientTest (1858 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (1854 ms total)
+[==========] 6 tests from 1 test suite ran. (1858 ms total)
 [  PASSED  ] 6 tests.
 
 [ASan+UBSan] disconnect_test...
@@ -2310,15 +2172,15 @@ Epoll server is listening on the port 18081
 [ RUN      ] DisconnectTest.DisconnectMidStream
 Loading old server data from AOF file...
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.DisconnectMidStream (502 ms)
+[       OK ] DisconnectTest.DisconnectMidStream (503 ms)
 [ RUN      ] DisconnectTest.ManyRapidConnectionsAndDisconnections
 Loading old server data from AOF file...
 Epoll server is listening on the port 18081
-[       OK ] DisconnectTest.ManyRapidConnectionsAndDisconnections (808 ms)
-[----------] 4 tests from DisconnectTest (2514 ms total)
+[       OK ] DisconnectTest.ManyRapidConnectionsAndDisconnections (807 ms)
+[----------] 4 tests from DisconnectTest (2516 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (2514 ms total)
+[==========] 4 tests from 1 test suite ran. (2516 ms total)
 [  PASSED  ] 4 tests.
 
 [ASan+UBSan] concurrency_stress...
@@ -2332,7 +2194,7 @@ Starting concurrency stress test:
 
 === concurrency_stress summary ===
 kv workers=8 kv readers=4 user workers=4 users/worker=250 duration=5s
-operations=12253691
+operations=12578441
 invariant failures=0
 RESULT: PASS
 
@@ -2343,7 +2205,7 @@ Registrations per thread: 10000
 Query threads: 4
 
 === UserBook Stress Test Results ===
-Total time: 1486 ms
+Total time: 900 ms
 Registration failures: 0
 Authentication failures: 0
 Operation failures: 0
@@ -2375,11 +2237,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] KVStoreTest.DeleteMissingKey
 [       OK ] KVStoreTest.DeleteMissingKey (0 ms)
 [ RUN      ] KVStoreTest.ConcurrentWritesAndReads
-[       OK ] KVStoreTest.ConcurrentWritesAndReads (539 ms)
-[----------] 4 tests from KVStoreTest (539 ms total)
+[       OK ] KVStoreTest.ConcurrentWritesAndReads (529 ms)
+[----------] 4 tests from KVStoreTest (530 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (539 ms total)
+[==========] 4 tests from 1 test suite ran. (530 ms total)
 [  PASSED  ] 4 tests.
 
 [TSan] test_user_book...
@@ -2402,11 +2264,11 @@ Running main() from /builddir/build/BUILD/gtest-1.17.0-build/googletest-1.17.0/g
 [ RUN      ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser
 [       OK ] UserBookTest.GetUserNameReturnsEmptyForUnknownUser (0 ms)
 [ RUN      ] UserBookTest.ConcurrentRegistrationsAllUnique
-[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (218 ms)
-[----------] 8 tests from UserBookTest (218 ms total)
+[       OK ] UserBookTest.ConcurrentRegistrationsAllUnique (187 ms)
+[----------] 8 tests from UserBookTest (187 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 1 test suite ran. (218 ms total)
+[==========] 8 tests from 1 test suite ran. (187 ms total)
 [  PASSED  ] 8 tests.
 
 [TSan] concurrency_stress...
@@ -2420,7 +2282,7 @@ Starting concurrency stress test:
 
 === concurrency_stress summary ===
 kv workers=8 kv readers=4 user workers=4 users/worker=250 duration=5s
-operations=3245371
+operations=3297145
 invariant failures=0
 RESULT: PASS
 
@@ -2431,7 +2293,7 @@ Registrations per thread: 10000
 Query threads: 4
 
 === UserBook Stress Test Results ===
-Total time: 3299 ms
+Total time: 1566 ms
 Registration failures: 0
 Authentication failures: 0
 Operation failures: 0
@@ -2444,7 +2306,7 @@ RESULT: PASS
 ============================================================
                  COMPLETE PIPELINE PASSED                   
 ============================================================
-Finished: Thu Sep  3 05:33:13 AM IST 2026
+Finished: Thu Sep  3 04:54:32 PM IST 2026
 
 Normal:       PASS
 ASan + UBSan: PASS
