@@ -193,8 +193,8 @@ jobs:
 
       # Adjust the client count below to whatever your README documents
       # as the full-scale figure for this project.
-      - name: Scalability test (60,000 clients / 120s)
-        run: ./build/tests_n_benchmarks/tests/test_scalability 127.0.0.1 8080 60000 10 120
+      - name: Scalability test (64,500 clients / 120s)
+        run: ./build/tests_n_benchmarks/tests/test_scalability 127.0.0.1 8080 64500 10 120
 
       - name: Stop server
         if: always()
