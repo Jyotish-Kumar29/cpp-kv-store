@@ -173,7 +173,7 @@ Full test and benchmark output: [`run_all_tests.log`](./docs/tests_logs/run_all_
 
 ## Continuous Integration
 
-Every push and pull request runs five jobs in parallel — see
+Every push and pull request runs six jobs in parallel — see
 [`.github/workflows/tests.yml`](.github/workflows/tests.yml):
 
 | Job | What it covers |
@@ -183,15 +183,12 @@ Every push and pull request runs five jobs in parallel — see
 | `tsan` | Offline unit tests + concurrency stress rebuilt and run under ThreadSanitizer |
 | `stress-and-chaos` | In-process concurrency/user stress, plus the TCP chaos and malformed-protocol suites against a live server |
 | `scalability-smoke` | 10,000 concurrent client connections against a live server, scaled down for a shared CI runner's file-descriptor budget |
+| `scalability-full` | 64,500 concurrent client connections against a live server |
 
-A sixth job, `scalability-full`, runs the connection-scalability test at
-full scale (tens of thousands of clients) but only on manual trigger
-(`workflow_dispatch`), since it needs a larger `ulimit -n` and ephemeral
-port range than the smoke test grants by default. The throughput/latency/
-endurance benchmarks and the 10-minute soak test are **not** part of CI —
-run numbers on shared runner hardware aren't representative of anything, so
-those stay a manual `./scripts/run/run_benchmarks.sh` /
-`./scripts/run/run_all.sh` step.
+The throughput/latency/endurance benchmarks and the 10-minute soak test are
+**not** part of CI — run numbers on shared runner hardware aren't
+representative of anything, so those stay a manual
+`./scripts/run/run_benchmarks.sh` / `./scripts/run/run_all.sh` step.
 
 ## Scope & Limitations
 
